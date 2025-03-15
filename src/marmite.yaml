@@ -1,0 +1,55 @@
+name: blog do marcelo
+url: "https://blog.marcelomaga.dev"
+tagline: "Esse é o meu mundo..."
+language: "pt-BR"
+pagination: 10
+menu:
+    # - ["Sobre mim", "about.html"]
+    - ["Tags", "tags.html"]
+    - ["Arquivo", "archive.html"]
+    - ["Github", "https://github.com/Marcelo-maga"]
+
+pages_title: Posts
+
+content_path: content
+templates_path: templates
+static_path: static
+media_path: content/media
+
+tags_title: Tags
+tags_content_title: Posts com a tag -> '$tag'
+
+archives_title: Arquivo
+archives_content_title: Posts de '$year'
+
+streams_title: Streams
+streams_content_title: ""
+
+authors_title: Autores
+enable_search: true
+enable_related_content: true
+search_title: ""
+
+site_path: ""
+
+card_image: ""
+banner_image: ""
+logo_image: ""
+default_date_format: "%B %Y, %A %e"
+
+default_author: marcelomaga
+authors:
+    marcelomaga:
+        name: Marcelo Magalhães
+        avatar: https://github.com/Marcelo-maga.png
+        bio: Vivão e consiente!
+        links:
+            - ["Github", "https://github.com/Marcelo-maga"]
+            - ["Linkedin", "https://www.linkedin.com/in/marcelo-maga/"]
+
+extra:
+    colorscheme_toggle: true
+toc: false
+json_feed: false
+
+footer: <div></div>
