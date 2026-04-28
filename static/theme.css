@@ -1263,6 +1263,7 @@ canvas {
 }
 
 .footer-grid {
+  width: 100%;
   justify-content: center;
   gap: 1rem;
   color: #57626b;
@@ -1506,5 +1507,7 @@ canvas {
   .footer-grid {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
