@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="generator" content="Marmite">
+    <link rel="icon" type="image/svg+xml" href="{{url_for(path='static/orbit.svg')}}">
+    {% block seo %}
+    <meta property="og:title" content="{{ site.name }}">
+    <meta property="og:description" content="{{ site.tagline }}">
+    {% if site.card_image %}
+    <meta property="og:image" content="{{url_for(path=site.card_image, abs=true)}}">
+    {% endif %}
+    {% if site.url %}
+    <meta property="og:url" content="{{site.url}}">
+    {% endif %}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{site.name}}">
+    {% endblock %}
+    {% block head %}
+    <title>{% if title %}{{title}} | {% endif %}{{ site.name }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for(path='static/theme.css')}}">
+    {% endblock %}
+    {% block feeds %}
+    {% include "base_feeds.html" ignore missing %}
+    {% endblock %}
+    {% if htmlhead is defined %}
+    {{ htmlhead }}
+    {% endif %}
+</head>
+<body class="{% if current_page %}page-{{ current_page | replace(from='.', to='-') }}{% endif %}" data-search-index="{{url_for(path='static/search_index.json')}}">
+    <div class="reading-progress" id="reading-progress"></div>
+    <header class="site-header">
+        <nav class="top-nav">
+            <a href="{{url_for(path='')}}" class="brand">{{ site.name }}</a>
+            <ul class="top-nav-links">
+                {% for item in menu %}
+                {% set name = item.0 %}
+                {% set url = item.1 %}
+                <li>
+                    {% if current_page and (current_page == url or (url == "artigos.html" and current_page is starting_with("artigos")) or (url == "notas.html" and current_page is starting_with("notas")) or (url == "archive.html" and current_page is starting_with("archive"))) %}
+                    <span class="nav-link nav-link-active">{{ name | upper }}</span>
+                    {% else %}
+                    <a class="nav-link" {% if url is starting_with("http") %}href="{{url}}" target="_blank"{% else %}href="{{url_for(path=url)}}"{% endif %}>{{ name | upper }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="top-nav-icons">
+                <button class="icon-button" type="button" aria-label="Buscar" data-search-open>
+                    <span class="icon-search" aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="page-shell">
+        {% block main %}{% endblock %}
+    </main>
+    {% if site.enable_search %}
+    <div class="search-overlay" data-search-overlay hidden>
+        <section class="search-dialog" role="dialog" aria-modal="true" aria-label="Buscar no blog">
+            <div class="search-command">
+                <span class="icon-search" aria-hidden="true"></span>
+                <input type="search" placeholder="Buscar notas, artigos ou tags" autocomplete="off" spellcheck="false" data-search-input>
+                <button type="button" aria-label="Fechar busca" data-search-close>ESC</button>
+            </div>
+            <div class="search-status" data-search-status>Digite para buscar no vault.</div>
+            <div class="search-results" data-search-results></div>
+        </section>
+    </div>
+    {% endif %}
+    {% if footer is defined %}
+    <footer class="site-footer">
+        {{ footer }}
+    </footer>
+    {% else %}
+    <footer class="site-footer">
+        {{ site.footer | safe }}
+    </footer>
+    {% endif %}
+    {% block tail %}
+    <script src="{{url_for(path='static/theme.js')}}"></script>
+    {% endblock %}
+    {% if htmltail is defined %}
+    {{ htmltail }}
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"504cd9777d63825f","type":"text","text":"# **Pode arriscar o negocio?**","x":-900,"y":440,"width":250,"height":80,"color":"6"},
+		{"id":"c3bc6b99aa25b2c8","type":"file","file":"Notes/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio Genérico (Generic Domain).md","x":-975,"y":660,"width":400,"height":400,"color":"6"},
+		{"id":"73d8ae44aa80c9be","type":"file","file":"Notes/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio Principal (Core Domain).md","x":-480,"y":660,"width":400,"height":400,"color":"6"},
+		{"id":"578cf7a82b463822","type":"file","file":"Notes/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio de Apoio (Supporting Domain).md","x":20,"y":660,"width":400,"height":400,"color":"6"},
+		{"id":"1a68251ebed40719","type":"text","text":"# **A solução pode ser comprada??**","x":-405,"y":160,"width":250,"height":50,"color":"6"},
+		{"id":"387c1c3ab816bac9","x":95,"y":440,"width":250,"height":60,"color":"6","type":"text","text":"# **A Regra de negocio é complexa?**"}
+	],
+	"edges":[
+		{"id":"2e9abf518b9cc2e0","fromNode":"1a68251ebed40719","fromSide":"left","toNode":"504cd9777d63825f","toSide":"top","color":"6","label":"Sim"},
+		{"id":"391e1b82a39f0ccf","fromNode":"504cd9777d63825f","fromSide":"bottom","toNode":"c3bc6b99aa25b2c8","toSide":"top","color":"6","label":"Não"},
+		{"id":"78cb5411fde3df0c","fromNode":"1a68251ebed40719","fromSide":"right","toNode":"387c1c3ab816bac9","toSide":"top","color":"6","label":"Não"},
+		{"id":"815aa2653588af0c","fromNode":"387c1c3ab816bac9","fromSide":"bottom","toNode":"578cf7a82b463822","toSide":"top","color":"6"},
+		{"id":"439f8a79c94ef7f6","fromNode":"387c1c3ab816bac9","fromSide":"left","toNode":"73d8ae44aa80c9be","toSide":"top","color":"6","label":"Sim"},
+		{"id":"4a55d7fb263263e2","fromNode":"504cd9777d63825f","fromSide":"right","toNode":"73d8ae44aa80c9be","toSide":"top","color":"6","label":"Sim"}
+	]
+}

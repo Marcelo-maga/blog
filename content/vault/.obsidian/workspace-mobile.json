@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "8f154e00047a8d1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e70d81edbfeca91b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93abc8a9ed7a19a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Journal/11042026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "11042026"
+            }
+          },
+          {
+            "id": "89ce4f3f52d1ac5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4 - Ideias/4 - Ideias.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "4 - Ideias"
+            }
+          },
+          {
+            "id": "248dc4c8cab190d0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "acc05cfc83a9c837",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d6474c2c67b10bcf",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Explorador de arquivos"
+        }
+      },
+      {
+        "id": "1b3028e9835a8e04",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Procurar"
+        }
+      },
+      {
+        "id": "9c75ec5170deab8a",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "db0479ec3255e8cd",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Marcadores"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "d4717862aa83e2c7",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "521d66a439eb7741",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "1 - Journal/30042025.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "b022e2844cac5b3b",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "1 - Journal/30042025.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Links de saída"
+        }
+      },
+      {
+        "id": "7e1a5b07f5b37e09",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "1 - Journal/30042025.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Sumário"
+        }
+      },
+      {
+        "id": "3b6287ad0e749f1c",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
+        }
+      }
+    ],
+    "currentTab": 3
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Criar nova base": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "file-cleaner-redux:Clean files": false,
+      "workspaces:Gerenciar leiautes da área de trabalho": false
+    }
+  },
+  "active": "248dc4c8cab190d0",
+  "lastOpenFiles": [
+    "2 - Second Brain/Engenharia de Software/Técnico/Fundamentos/Programação de Baixo Nível.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/Fundamentos/Rust Lang.md",
+    "4 - Ideias/Presente de 3 anos namoro.md",
+    "4 - Ideias/4 - Ideias.md",
+    "1 - Journal/21042026.md",
+    "1 - Journal/Sem título.md",
+    "1 - Journal/11042026.md",
+    "1 - Journal/30042025.md",
+    "2 - Second Brain/Financias/Regras.md",
+    "2 - Second Brain/Engenharia de Software/Engenharia de Software.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/Design Patterns/Design Patterns.md",
+    "1 - Journal/18042025.md",
+    "3 - Referências/3 - Referências.md",
+    "2 - Second Brain/Produtividade/Método STAR.md",
+    "2 - Second Brain/Engenharia de Software/Teórico/Qualidade de código/SOLID.md",
+    "2 - Second Brain/Engenharia de Software/Teórico/Qualidade de código/Inversão de Dependência.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/Arquitetura de Software/Arquitetura Limpa.md",
+    "midia/arquitetura-limpa-novo.svg",
+    "1 - Journal/16062025.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/DevOps/DevOps.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/Arquitetura de Software/Arquitetura Hexagonal.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/Arquitetura de Software/Arquitetura de Software.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/DevOps/Kubernetes.md",
+    "1 - Journal/11062025.md",
+    "1 - Journal/10062025.md",
+    "1 - Journal/20052025.md",
+    "2 - Second Brain/Engenharia de Software/Técnico/DevOps/Terraform.md",
+    "5 - Canvas/Sem título.canvas",
+    "2 - Second Brain/Engenharia de Software/Teórico/DDD/Design Estratégico/Como identificar Subdomínios.canvas",
+    "2 - Second Brain/Engenharia de Software/Teórico/Qualidade de código",
+    "2 - Second Brain/Engenharia de Software/Files/software-architect-roadmap.pdf",
+    "2 - Second Brain/Engenharia de Software/Técnico/Arquitetura de Software",
+    "2 - Second Brain/Engenharia de Software/Teórico/DDD/Design Estratégico",
+    "2 - Second Brain/Engenharia de Software/Técnico/Design Patterns",
+    "2 - Second Brain/Engenharia de Software/Técnico/Fundamentos",
+    "2 - Second Brain/Engenharia de Software/Técnico/DevOps",
+    "2 - Second Brain/Engenharia de Software/Teórico/DDD",
+    "2 - Second Brain/Engenharia de Software/Teórico",
+    "2 - Second Brain/Engenharia de Software/Files",
+    "midia/Pasted image 20250408204102.png",
+    "Pasted image 20250408204102.png",
+    "midia/Screenshot_20250324_223325_Chrome.jpg",
+    "midia/fonte.jpg"
+  ]
+}

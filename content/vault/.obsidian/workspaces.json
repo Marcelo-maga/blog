@@ -1,0 +1,228 @@
+{
+  "workspaces": {
+    "Default": {
+      "main": {
+        "id": "a131714516165cf4",
+        "type": "split",
+        "children": [
+          {
+            "id": "15dba94439dd1081",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "33f6d636f184e638",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "Nova aba"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "e4ba7aa3e7ba50eb",
+        "type": "split",
+        "children": [
+          {
+            "id": "0309054697140305",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "108bc9314792dde3",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Explorador de arquivos"
+                }
+              },
+              {
+                "id": "961ea1d973105a99",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Procurar"
+                }
+              },
+              {
+                "id": "cb7f29430478b20b",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Marcadores"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 277.5
+      },
+      "right": {
+        "id": "4592df5ff04bcd4c",
+        "type": "split",
+        "children": [
+          {
+            "id": "a5b6300153cbcad1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "87dd05416d5a40a2",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Conhecimento/✏️ Zettelkasten.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Links inversos para ✏️ Zettelkasten"
+                }
+              },
+              {
+                "id": "bbbf1b2baae516da",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Conhecimento/✏️ Zettelkasten.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Links de saída para ✏️ Zettelkasten"
+                }
+              },
+              {
+                "id": "b9dc8f3e2e41a3a7",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.258838656218163,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Visualização em gráfico"
+                }
+              },
+              {
+                "id": "8b831ea6c44a299c",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "567a585556e1eb77",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Conhecimento/✏️ Zettelkasten.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Sumário de ✏️ Zettelkasten"
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "51d76840348a9523",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "430b412b00ba09a9",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Abrir a troca rápida": false,
+          "graph:Abrir visualização em gráfico": false,
+          "canvas:Criar novo canvas": false,
+          "daily-notes:Abrir a nota de hoje": false,
+          "templates:Inserir modelo": false,
+          "command-palette:Abrir paleta de comandos": false,
+          "workspaces:Gerenciar leiautes da área de trabalho": false,
+          "markdown-importer:Abrir importador Markdown": false
+        }
+      },
+      "active": "33f6d636f184e638",
+      "mtime": "2025-04-04T09:41:44-03:00"
+    }
+  },
+  "active": "Default"
+}

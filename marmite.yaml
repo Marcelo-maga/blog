@@ -1,0 +1,52 @@
+name: blog
+tagline: Estudos, notas e artigos sobre software, sistemas e arquitetura.
+url: https://marcelo-maga.github.io
+footer: ""
+language: pt-BR
+pagination: 6
+toc: true
+json_feed: true
+enable_search: true
+search_title: Buscar
+search_show_matches: true
+search_match_count: 3
+card_image: static/og-card.svg
+media_path: vault/midia
+default_date_format: "%d/%m/%Y"
+
+menu:
+    - ["Início", "index.html"]
+    - ["Artigos", "artigos.html"]
+    - ["Notas", "notas.html"]
+    - ["Grafo", "grafo.html"]
+    - ["Arquivo", "archive.html"]
+    - ["Sobre", "about.html"]
+
+default_author: editorial
+authors:
+    editorial:
+        name: Marcelo Magalhães
+        avatar: https://github.com/Marcelo-maga.png
+        bio: Lead systems architect focused on distributed systems, high-latency data transfer, and low-level optimization.
+        links:
+            - ["GitHub", "https://github.com/Marcelo-maga"]
+            - ["Sobre", "about.html"]
+
+publish_md: true
+publish_urls_json: true
+
+markdown_parser:
+    extension:
+        wikilinks_title_before_pipe: false
+        wikilinks_title_after_pipe: true
+
+streams:
+    notas:
+        display_name: "Notas"
+    artigos:
+        display_name: "Artigos"
+
+extra:
+    colorscheme_toggle: false
+    colormode: dark
+    colormodetoggle: false

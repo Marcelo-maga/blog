@@ -1,0 +1,18 @@
+{
+  "deletionDestination": "system",
+  "obsidianTrashCleanupAge": -1,
+  "excludeInclude": 0,
+  "excludedFolders": [
+    "5 - Canvas",
+    "Lore"
+  ],
+  "attachmentsExcludeInclude": 1,
+  "attachmentExtensions": [],
+  "deletionConfirmation": true,
+  "runOnStartup": true,
+  "removeFolders": true,
+  "ignoredFrontmatter": [],
+  "ignoreAllFrontmatter": false,
+  "codeblockTypes": [],
+  "deleteEmptyMarkdownFiles": true
+}

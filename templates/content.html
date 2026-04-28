@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block seo %}
+<meta property="og:title" content="{{content.title}}">
+{% if content.description %}
+<meta property="og:description" content="{{ content.description | replace(from='"', to="") | truncate(length=100, end="...") }}">
+{% else %}
+<meta property="og:description" content="{{ content.html | striptags | trim_start_matches(pat=content.title) | truncate(length=100, end="...") }}">
+{% endif %}
+{% if content.card_image %}
+<meta property="og:image" content="{{url_for(path=content.card_image, abs=true)}}">
+{% elif site.card_image %}
+<meta property="og:image" content="{{url_for(path=site.card_image, abs=true)}}">
+{% endif %}
+{% if site.url %}
+<meta property="og:url" content="{{url_for(path=content.slug, abs=true)}}.html">
+{% endif %}
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{site.name}}">
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/base16/material-darker.min.css">
+{% endblock %}
+
+{% block main %}
+<div class="article-frame">
+<article class="article-shell h-entry">
+  <data class="p-name" value="{{ content.title }}"></data>
+  <a class="u-url" href="{{url_for(path=content.slug ~ '.html')}}" style="display:none;"></a>
+  {% if content.authors %}
+  {% set author_key = content.authors.0 %}
+  {% else %}
+  {% set author_key = site.default_author %}
+  {% endif %}
+  {% set author = site.authors[author_key] %}
+  {% set words = content.html | striptags | wordcount %}
+  {% set reading_time = (words / 220) | round(method="ceil") %}
+  <header class="article-header">
+    {% if content.tags %}
+    <div class="chip-row article-kickers">
+      {% for tag in content.tags | slice(end=2) %}
+      <span class="meta-chip">{{ tag | upper | replace(from=" ", to="_") }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <h1 class="article-title">{{ content.title }}</h1>
+    <div class="article-meta-bar">
+      <div class="article-meta-left">
+        {% if content.date %}
+        <span class="article-date">{{ content.date | date(format="%Y.%m.%d") }}</span>
+        {% endif %}
+        <span data-reading-time>{% if reading_time < 1 %}1{% else %}{{ reading_time }}{% endif %} MIN LEITURA</span>
+      </div>
+      <a class="article-author-mini" href="{{url_for(path='about.html')}}" rel="author">
+        <img src="{{url_for(path=author.avatar)}}" alt="{{ author.name }}">
+        <span>{{ author.name | upper }}</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="content-html article-content e-content">{{ content.html }}</div>
+
+  {% if content.tags %}
+  <section class="article-tags-section">
+    <h4 class="small-label">TAGS:</h4>
+    <div class="tag-list">
+      {% for tag in content.tags %}
+      {% set tag_slug = "tag-" ~ tag | trim | slugify %}
+      <a href="{{url_for(path=tag_slug ~ '.html')}}">#{{ tag | upper | replace(from=" ", to="_") }}</a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if site.enable_related_content and content.back_links %}
+  <section class="backlink-panel">
+    <h4 class="small-label">LINKS RECEBIDOS:</h4>
+    <div class="backlink-list">
+      {% for item in content.back_links | slice(end=10) %}
+      <a href="{{url_for(path=item.slug ~ '.html')}}">
+        <span>VEM_DE</span>
+        {{ item.title }}
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+</article>
+<aside class="article-toc" data-article-toc hidden>
+  <p class="article-toc-label">Nesta página</p>
+  <nav data-article-toc-list aria-label="Navegação do conteúdo"></nav>
+</aside>
+</div>
+{% endblock %}
+
+{% block tail %}
+{{ super() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+{% endblock %}

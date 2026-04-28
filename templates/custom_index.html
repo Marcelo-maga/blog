@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{ site.name }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+/>
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="{{url_for(path='static/theme.css')}}"
+/>
+{% endblock %}
+
+{% block main %}
+<div class="page-column home-shell">
+    {% if hero is defined %}
+    <header class="hero-block home-hero">
+        {{ hero }}
+        <div class="section-rule"></div>
+    </header>
+    {% endif %}
+
+    <section class="home-lanes" aria-label="Seções principais">
+        <a class="home-lane" href="{{url_for(path='artigos.html')}}">
+            <span class="home-lane-kicker">Textos editados</span>
+            <strong>Artigos</strong>
+            <p>Ensaios e publicações fechadas, montadas a partir das notas e conceitos do vault.</p>
+        </a>
+        <a class="home-lane" href="{{url_for(path='notas.html')}}">
+            <span class="home-lane-kicker">Base de estudos</span>
+            <strong>Notas</strong>
+            <p>Conceitos, referências e registros de aprendizado em formato mais direto.</p>
+        </a>
+    </section>
+
+    {% set posts = site_data.posts | remove_draft | sort(attribute="date") | reverse %}
+    {% if posts | length > 0 %}
+    <section class="home-latest h-feed">
+        <div class="home-section-header">
+            <p class="archive-kicker">Últimos arquivos</p>
+            <a href="{{url_for(path='archive.html')}}">Arquivo completo</a>
+        </div>
+
+        <div class="home-latest-list">
+            {% for content in posts | slice(end=8) %}
+            {% if content.slug != "about" and content.slug != "grafo" and content.title != "Artigos" and content.title != "Grafo" %}
+            <article class="home-latest-item h-entry">
+                <div class="feed-meta-row">
+                    {% if content.date %}
+                    <span class="meta-date">{{ content.date | date(format="%Y-%m-%d") }}</span>
+                    {% endif %}
+                    <div class="chip-row">
+                        {% if content.stream %}
+                        <span class="meta-chip">{{ content.stream | upper }}</span>
+                        {% endif %}
+                        {% for tag in content.tags | slice(end=1) %}
+                        <span class="meta-chip">{{ tag | upper | replace(from=" ", to="_") }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <h2 class="feed-title p-name">
+                    <a class="u-url" href="{{url_for(path=content.slug ~ '.html')}}">{{ content.title }}</a>
+                </h2>
+                {% if content.description and content.description != "null" %}
+                <p class="feed-summary p-summary">{{ content.description | replace(from='"', to="") | truncate(length=180, end="...") }}</p>
+                {% elif content.html and content.html != "null" %}
+                <p class="feed-summary p-summary">{{ content.html | striptags | trim_start_matches(pat=content.title) | truncate(length=180, end="...") }}</p>
+                {% endif %}
+            </article>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</div>
+{% endblock %}

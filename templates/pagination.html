@@ -1,0 +1,13 @@
+<nav class="pagination" aria-label="Paginação">
+  {% if previous_page %}
+  <div class="pagination-slot">
+    <a class="ghost-button" href="{{url_for(path=previous_page)}}">&larr; Anterior</a>
+  </div>
+  {% endif %}
+  <span class="pagination-current">{{ current_page_number }}/{{ total_pages }}</span>
+  {% if next_page %}
+  <div class="pagination-slot pagination-slot-next">
+    <a class="ghost-button" href="{{url_for(path=next_page)}}">Próxima &rarr;</a>
+  </div>
+  {% endif %}
+</nav>
