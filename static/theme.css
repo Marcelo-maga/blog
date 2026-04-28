@@ -1263,12 +1263,22 @@ canvas {
 }
 
 .footer-grid {
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   color: #57626b;
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.footer-grid a {
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer-grid a:hover {
+  color: var(--accent-hover);
 }
 
 @media (max-width: 1180px) {
@@ -1495,6 +1505,6 @@ canvas {
   .author-panel,
   .footer-grid {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
