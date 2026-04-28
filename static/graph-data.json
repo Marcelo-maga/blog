@@ -1,7 +1,6 @@
 {
-  "generatedAt": "2026-04-28T13:19:33",
+  "generatedAt": "2026-04-28T13:33:56",
   "nodes": [
-    {"id": "content:como-criar-guia-estudos", "label": "Como criar um guia de estudos", "kind": "article", "url": "artigos-como-criar-guia-estudos.html", "tags": ["estudos"]},
     {"id": "content:contexto-delimitado-bounded-context", "label": "Contexto Delimitado (Bounded Context)", "kind": "note", "url": "notas-contexto-delimitado-bounded-context.html", "tags": ["ddd"]},
     {"id": "content:dominio-generico-generic-domain", "label": "Domínio Genérico (Generic Domain)", "kind": "note", "url": "notas-dominio-generico-generic-domain.html", "tags": ["ddd"]},
     {"id": "content:dominio-principal-core-domain", "label": "Domínio Principal (Core Domain)", "kind": "note", "url": "notas-dominio-principal-core-domain.html", "tags": ["ddd"]},
@@ -24,14 +23,12 @@
     {"id": "content:paradigmas-de-programacao", "label": "Paradigmas de Programação", "kind": "note", "url": "notas-paradigmas-de-programacao.html", "tags": ["fundamentos"]},
     {"id": "content:programacao-de-baixo-nivel", "label": "Programação de Baixo Nível", "kind": "note", "url": "notas-programacao-de-baixo-nivel.html", "tags": []},
     {"id": "content:fundamentos", "label": "Fundamentos", "kind": "note", "url": "notas-fundamentos.html", "tags": ["fundamentos"]},
-    {"id": "tag:estudos", "label": "#estudos", "kind": "tag", "url": "tag-estudos.html", "tags": []},
     {"id": "tag:ddd", "label": "#ddd", "kind": "tag", "url": "tag-ddd.html", "tags": []},
     {"id": "tag:arquitetura-de-software", "label": "#arquitetura-de-software", "kind": "tag", "url": "tag-arquitetura-de-software.html", "tags": []},
     {"id": "tag:devops", "label": "#devops", "kind": "tag", "url": "tag-devops.html", "tags": []},
     {"id": "tag:fundamentos", "label": "#fundamentos", "kind": "tag", "url": "tag-fundamentos.html", "tags": []}
   ],
   "edges": [
-    {"source": "content:como-criar-guia-estudos", "target": "tag:estudos", "kind": "tag"},
     {"source": "content:contexto-delimitado-bounded-context", "target": "tag:ddd", "kind": "tag"},
     {"source": "content:dominio-generico-generic-domain", "target": "tag:ddd", "kind": "tag"},
     {"source": "content:dominio-principal-core-domain", "target": "tag:ddd", "kind": "tag"},
