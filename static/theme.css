@@ -1301,6 +1301,25 @@ canvas {
   color: var(--accent-hover);
 }
 
+.footer-counter {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.footer-counter img {
+  display: block;
+  width: auto;
+  height: 20px;
+  opacity: 0.82;
+  transition: opacity 160ms ease;
+}
+
+.footer-counter:hover img {
+  opacity: 1;
+}
+
 @media (max-width: 1180px) {
   .article-toc {
     display: none;
