@@ -1171,6 +1171,25 @@ canvas {
   border-top: 1px solid var(--line);
 }
 
+.comments-section {
+  margin-top: 3.25rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.comments-section h2 {
+  margin: 0 0 1.25rem;
+  color: var(--text);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+}
+
+.comments-section .giscus,
+.comments-section .giscus-frame {
+  width: 100%;
+}
+
 .small-label {
   margin: 0 0 1rem;
   color: var(--text-dim);

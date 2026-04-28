@@ -88,6 +88,14 @@
   </section>
   {% endif %}
 
+  {% if content.date %}
+    {% if comments is defined %}
+      {{ comments }}
+    {% elif site.extra.comments.source is defined %}
+      {% include "comments.html" ignore missing %}
+    {% endif %}
+  {% endif %}
+
 </article>
 <aside class="article-toc" data-article-toc hidden>
   <p class="article-toc-label">Nesta página</p>
