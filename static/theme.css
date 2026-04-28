@@ -159,6 +159,51 @@ canvas {
   cursor: pointer;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle-bars,
+.menu-toggle-bars::before,
+.menu-toggle-bars::after {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.menu-toggle-bars {
+  position: relative;
+}
+
+.menu-toggle-bars::before,
+.menu-toggle-bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.menu-toggle-bars::before {
+  top: -5px;
+}
+
+.menu-toggle-bars::after {
+  top: 5px;
+}
+
+.top-nav.menu-open .menu-toggle-bars {
+  transform: rotate(45deg);
+}
+
+.top-nav.menu-open .menu-toggle-bars::before {
+  transform: translateY(5px) rotate(90deg);
+}
+
+.top-nav.menu-open .menu-toggle-bars::after {
+  opacity: 0;
+}
+
 .icon-search {
   display: inline-block;
   width: 14px;
@@ -1238,7 +1283,7 @@ canvas {
   }
 
   .site-header {
-    position: sticky;
+    position: static;
   }
 
   .top-nav,
@@ -1252,31 +1297,50 @@ canvas {
 
   .top-nav {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
     gap: 0.8rem 1rem;
     min-height: 0;
     padding: 0.9rem 0;
   }
 
+  .menu-toggle {
+    display: inline-flex;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
   .top-nav-links {
     grid-column: 1 / -1;
+    grid-row: 2;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 100%;
     gap: 0.45rem;
     overflow: visible;
     white-space: normal;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-0.35rem);
+    transition: max-height 180ms ease, opacity 160ms ease, transform 160ms ease, visibility 0s linear 180ms;
+  }
+
+  .top-nav.menu-open .top-nav-links {
+    max-height: 12rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
   }
 
   .top-nav-icons {
+    grid-column: 3;
+    grid-row: 1;
     justify-content: flex-end;
     gap: 0.85rem;
-  }
-
-  .brand {
-    min-width: 0;
-    font-size: 0.86rem;
   }
 
   .nav-link {

@@ -35,9 +35,11 @@
 <body class="{% if current_page %}page-{{ current_page | replace(from='.', to='-') }}{% endif %}" data-search-index="{{url_for(path='static/search_index.json')}}">
     <div class="reading-progress" id="reading-progress"></div>
     <header class="site-header">
-        <nav class="top-nav">
-            <a href="{{url_for(path='')}}" class="brand">{{ site.name }}</a>
-            <ul class="top-nav-links">
+        <nav class="top-nav" data-site-nav>
+            <button class="icon-button menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+                <span class="menu-toggle-bars" aria-hidden="true"></span>
+            </button>
+            <ul class="top-nav-links" id="site-menu" data-menu>
                 {% for item in menu %}
                 {% set name = item.0 %}
                 {% set url = item.1 %}

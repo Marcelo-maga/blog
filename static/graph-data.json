@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T13:33:56",
+  "generatedAt": "2026-04-28T13:52:07",
   "nodes": [
     {"id": "content:contexto-delimitado-bounded-context", "label": "Contexto Delimitado (Bounded Context)", "kind": "note", "url": "notas-contexto-delimitado-bounded-context.html", "tags": ["ddd"]},
     {"id": "content:dominio-generico-generic-domain", "label": "Domínio Genérico (Generic Domain)", "kind": "note", "url": "notas-dominio-generico-generic-domain.html", "tags": ["ddd"]},
