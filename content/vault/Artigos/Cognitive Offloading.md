@@ -27,7 +27,7 @@ Alguns de nosso colegas mais experientes podem tratar isso como uma síndrome do
 
 Bom a primeira etapa do vicio provavelmente e admitir que você esta viciado né? correto? não sei nunca fui um, mas creio que deve ser por ai a ideia central, e esses dias andando por uma IDE nova o [Zed](https://zed.dev/) achei uma opção muito interessante, desabilitar todos os recursos de IA. É essa é a minha ideia, forçar um grande Rollback, para que a área de estudos principal (depois de Counter-Strike é claro) da minha vida e carreira possa voltar a se desenvolver de maneira natural
 
-![[{B727BA46-E8E1-43DB-A3F0-1B0461B83C3F}.png]]
+![Zed com recursos de IA desativados](midia/{B727BA46-E8E1-43DB-A3F0-1B0461B83C3F}.png)
 
 Não espero que seja fácil, provavelmente terei recaídas, mas acho que essa vai ser a melhor forma de voltar a ter controle e confiança que tinha a 2 anos atrás. Logicamente que não vou fazer isso na empresa, pois ainda sim acima do meu conhecimento, a produtividade que a IA trás é sim verdadeira (não é 10x como falam, mas ajuda sim), então em cenários e ambientes que eu preciso utilizar para aumentar a minha produtividade, vou utilizar sim! mas claro, agora com um pouco mais de confiança e certeza doque eu estou fazendo e desenvolvendo.
 
