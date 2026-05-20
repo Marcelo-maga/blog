@@ -1283,12 +1283,12 @@ canvas {
 
 .footer-grid {
   width: 100%;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 1.5rem;
   color: #57626b;
   font-size: 0.72rem;
   letter-spacing: 0.04em;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-grid a {
@@ -1547,5 +1547,6 @@ canvas {
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 0.9rem;
   }
 }
