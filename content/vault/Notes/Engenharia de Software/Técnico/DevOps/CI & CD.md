@@ -2,7 +2,6 @@
 title: "CI & CD"
 date: "2026-04-25"
 slug: "ci-e-cd"
-authors: ["editorial"]
 stream: notas
 tags: ["devops"]
 ---

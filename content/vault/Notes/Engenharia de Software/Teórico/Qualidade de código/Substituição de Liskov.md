@@ -2,7 +2,6 @@
 title: "Substituição de Liskov"
 date: "2026-04-25"
 slug: "substituicao-de-liskov"
-authors: ["editorial"]
 stream: notas
 tags: []
 ---

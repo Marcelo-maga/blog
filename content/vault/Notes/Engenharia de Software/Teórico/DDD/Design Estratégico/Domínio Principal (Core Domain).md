@@ -2,7 +2,6 @@
 title: "Domínio Principal (Core Domain)"
 date: "2026-04-25"
 slug: "dominio-principal-core-domain"
-authors: ["editorial"]
 stream: notas
 tags: ["ddd"]
 ---

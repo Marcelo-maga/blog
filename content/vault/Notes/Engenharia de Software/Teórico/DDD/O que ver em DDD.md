@@ -2,7 +2,6 @@
 title: "DDD"
 date: "2026-04-25"
 slug: "ddd"
-authors: ["editorial"]
 stream: notas
 tags: ["ddd"]
 ---

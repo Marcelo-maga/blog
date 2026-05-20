@@ -2,7 +2,6 @@
 title: "YAGN"
 date: "2026-04-25"
 slug: "yagn"
-authors: ["editorial"]
 stream: notas
 tags: []
 ---

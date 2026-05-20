@@ -2,7 +2,6 @@
 title: "Linguagem Ubíqua (Ubiquitous Language)"
 date: "2026-04-25"
 slug: "linguagem-ubiqua-ubiquitous-language"
-authors: ["editorial"]
 stream: notas
 tags: ["ddd"]
 ---

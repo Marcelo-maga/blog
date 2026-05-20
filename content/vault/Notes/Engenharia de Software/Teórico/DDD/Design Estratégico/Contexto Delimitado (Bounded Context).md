@@ -2,7 +2,6 @@
 title: "Contexto Delimitado (Bounded Context)"
 date: "2026-04-25"
 slug: "contexto-delimitado-bounded-context"
-authors: ["editorial"]
 stream: notas
 tags: ["ddd"]
 ---

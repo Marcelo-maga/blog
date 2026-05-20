@@ -2,7 +2,6 @@
 title: "Programação de Baixo Nível"
 date: "2026-04-25"
 slug: "programacao-de-baixo-nivel"
-authors: ["editorial"]
 stream: notas
 tags: []
 ---

@@ -2,7 +2,6 @@
 title: "DevOps"
 date: "2026-04-25"
 slug: "devops"
-authors: ["editorial"]
 stream: notas
 tags: ["devops"]
 ---

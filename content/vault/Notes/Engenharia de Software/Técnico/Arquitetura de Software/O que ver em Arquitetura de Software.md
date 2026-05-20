@@ -2,7 +2,6 @@
 title: "Arquitetura de Software"
 date: "2026-04-25"
 slug: "arquitetura-de-software"
-authors: ["editorial"]
 stream: notas
 tags: ["arquitetura-de-software"]
 ---

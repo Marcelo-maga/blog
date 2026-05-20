@@ -2,7 +2,6 @@
 title: "Domínio Genérico (Generic Domain)"
 date: "2026-04-25"
 slug: "dominio-generico-generic-domain"
-authors: ["editorial"]
 stream: notas
 tags: ["ddd"]
 ---

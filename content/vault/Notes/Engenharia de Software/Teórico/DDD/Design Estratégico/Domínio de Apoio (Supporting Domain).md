@@ -2,7 +2,6 @@
 title: "Domínio de Apoio (Supporting Domain)"
 date: "2026-04-25"
 slug: "dominio-de-apoio-supporting-domain"
-authors: ["editorial"]
 stream: notas
 tags: ["ddd"]
 ---

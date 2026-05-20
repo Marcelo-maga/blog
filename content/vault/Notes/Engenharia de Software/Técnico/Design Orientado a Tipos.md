@@ -2,7 +2,6 @@
 title: "Design Orientado a Tipos"
 date: "2026-04-25"
 slug: "design-orientado-a-tipos"
-authors: ["editorial"]
 stream: notas
 tags: ["arquitetura-de-software"]
 ---

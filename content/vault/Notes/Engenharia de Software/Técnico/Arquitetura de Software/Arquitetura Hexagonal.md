@@ -2,7 +2,6 @@
 title: "Arquitetura Hexagonal"
 date: "2026-04-25"
 slug: "arquitetura-hexagonal"
-authors: ["editorial"]
 stream: notas
 tags: ["arquitetura-de-software"]
 ---

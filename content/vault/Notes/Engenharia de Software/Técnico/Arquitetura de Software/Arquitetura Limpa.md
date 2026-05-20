@@ -2,7 +2,6 @@
 title: "Arquitetura Limpa"
 date: "2026-04-25"
 slug: "arquitetura-limpa"
-authors: ["editorial"]
 stream: notas
 tags: ["arquitetura-de-software"]
 ---

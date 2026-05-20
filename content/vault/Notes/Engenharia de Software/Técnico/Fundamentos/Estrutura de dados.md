@@ -2,7 +2,6 @@
 title: "Estrutura de dados"
 date: "2026-04-25"
 slug: "estrutura-de-dados"
-authors: ["editorial"]
 stream: notas
 tags: ["fundamentos"]
 ---

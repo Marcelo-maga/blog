@@ -2,7 +2,6 @@
 title: "Fundamentos"
 date: "2026-04-25"
 slug: "fundamentos"
-authors: ["editorial"]
 stream: notas
 tags: ["fundamentos"]
 ---

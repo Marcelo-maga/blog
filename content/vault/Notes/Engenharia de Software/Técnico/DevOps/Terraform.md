@@ -2,7 +2,6 @@
 title: "Terraform"
 date: "2026-04-25"
 slug: "terraform"
-authors: ["editorial"]
 stream: notas
 tags: ["devops"]
 ---
