@@ -37,4 +37,4 @@ Vale ressaltar que não vai ser apenas ativar aquele switch ali em cima que todo
 
 Vale ressaltar que esse texto aqui foi escrito 100% sem IA, como já parte do meu treinamento de não ser dominado por maquinas!
 
-Muito obrigado por ler até aqui e sintase livre para escrever ai em baixo, beijos!
+Muito obrigado por ler até aqui e sinta-se livre para escrever ai em baixo, beijos!
