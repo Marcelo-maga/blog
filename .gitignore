@@ -1,3 +1,4 @@
 site/
 .DS_Store
 static/graph-data.json
+.obsidian
