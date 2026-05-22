@@ -27,9 +27,6 @@ pensei em aceitar regex (o inferno nos aguarda), múltiplos arquivos sendo proce
 
 Spolier: O primeiro artigo quero fazer uma analise (pouco aprofundada) do código que temos ao seguir o livro e já começar com pequenas melhorias!
 
-> [!question]- Spolier
-> O primeiro artigo quero fazer uma analise (muito aprofundada) do código que temos ao seguir o livro e já começar com pequenas melhorias!
-
 # Conclusão
 
 Já deixei um repositório no [Github](https://github.com/Marcelo-maga/super-minigrep) pronto para começar 
