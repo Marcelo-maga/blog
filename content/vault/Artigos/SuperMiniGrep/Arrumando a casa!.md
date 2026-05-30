@@ -4,7 +4,6 @@ date: 2026-05-30
 slug: organize-super-minigrap
 tags:
   - rust
-  - minigrep
 stream: artigos
 ---
 Não, eu não quero ajudar você a organizar seu quarto!

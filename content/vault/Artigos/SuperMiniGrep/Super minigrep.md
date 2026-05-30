@@ -4,7 +4,6 @@ date: 2026-05-21
 slug: super-minigrap
 tags:
   - rust
-  - minigrep
 stream: artigos
 ---
 Eitchaa 2 posts em uma semana, sou uma maquina...
@@ -35,11 +34,4 @@ conforme for criando os artigos vou usando esse aqui como um indexador para que 
 
 ## Sumario
 
-1 - [[Arrumando a casa!]] 
-
-
-
-
-
-
-
+1 - [[Arrumando a casa!]]
