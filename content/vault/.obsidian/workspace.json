@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artigos/SuperMiniGrep/Super minigrep.md",
+                "file": "Artigos/SuperMiniGrep/Arrumando a casa!.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Super minigrep"
+              "title": "Arrumando a casa!"
             }
           }
         ],
@@ -197,17 +197,26 @@
   },
   "active": "2903c1dcabd791b7",
   "lastOpenFiles": [
-    "Artigos/SuperMiniGrep/Arrumando a casa!.md",
+    "midia/super-minigrep/{3}.png",
+    "midia/super-minigrep/{2}.png",
+    "midia/super-minigrep/{1}.png",
+    "midia/super-minigrep",
+    "midia/super-mini-grep/{3}.png",
+    "midia/super-mini-grep/{2}.png",
+    "midia/super-mini-grep/{1}.png",
+    "midia/Pasted image 20250408204102.png",
+    "midia/super-mini-grep/Pasted image 20260530102429.png",
+    "midia/super-mini-grep/Pasted image 20250408204102.png",
+    "midia/super-mini-grep/Pasted image 20260530094010.png",
+    "midia/super-mini-grep/Pasted image 20260530103031.png",
+    "midia/super-mini-grep",
     "Artigos/SuperMiniGrep/Super minigrep.md",
-    "midia/Pasted image 20260530103031.png",
-    "midia/Pasted image 20260530102429.png",
-    "midia/Pasted image 20260530094010.png",
+    "Artigos/SuperMiniGrep/Arrumando a casa!.md",
     "Artigos/SuperMiniGrep",
     "Artigos/Cognitive Offloading.md",
     "Artigos/().md",
     "Artigos/Super-minigrep.md",
     "Notes/Engenharia de Software/Técnico/Arquitetura de Software/Arquitetura Hexagonal.md",
-    "midia/{B727BA46-E8E1-43DB-A3F0-1B0461B83C3F}.png",
     "Artigos/adasd.md",
     "Notes/Engenharia de Software/Técnico/DevOps/Terraform.md",
     "Notes/Engenharia de Software/Teórico/Qualidade de código/YAGN.md",
@@ -228,8 +237,6 @@
     "Notes/Engenharia de Software/Técnico/A Regra do Órfão.md",
     "Notes/Carreira/Método STAR.md",
     "Notes/Engenharia de Software/Técnico/Arquitetura de Software/O que ver em Arquitetura de Software.md",
-    "midia/Pasted image 20250408204102.png",
-    "midia/arquitetura-limpa-novo.svg",
     "2 - Second Brain/Engenharia de Software/Files/software-architect-roadmap.pdf",
     "2 - Second Brain/Sem título",
     "Notes/Carreira",
@@ -237,8 +244,6 @@
     "Sem título.canvas",
     "Sem título.base",
     "midia",
-    "4 - Ideias",
-    "2 - Second Brain/Financias",
-    "1 - Journal"
+    "4 - Ideias"
   ]
 }
