@@ -15,7 +15,7 @@ Bom, como eu avia dito no artigo anterior tava querendo fazer esse projetinho do
 # Código atual
 
 Deixei uma [Branch](https://github.com/Marcelo-maga/super-minigrep/tree/feature/book_code) criada dentro do repositório mas aqui esta uma fotografia digital do estado atual que quero dizer
-![[Pasted image 20260530094010.png]]
+![Estrutura atual do repo](midia/Pasted image 20260530094010.png)
 
 Consegue ver?? como as pessoas vão conseguir trabalhar aqui?? me fala!!! não tem como, então vamos primeiro aplicar melhorias na organização do projeto para ai sim, aplicar melhorias verdadeiras.
 
@@ -168,7 +168,7 @@ impl SuperMiniGrep {
 
 Com tudo isso feito, nossa cli já deve compilar, mas primeiros vamos rodar os testes e ver se ta tudo passando né:
 
-![[Pasted image 20260530102429.png]]
+![Testes passando tudo OK](midia/Pasted image 20260530102429.png)
 
 Tudo certo, nossas alterações não quebraram a CLI no meio, um grande avanço para nós não acha? 
 
@@ -201,6 +201,6 @@ Bom isso aqui ficou maior do que eu esperava, sei que prometi no artigo anterior
 
 e foi assim que ficou a estrutura do projeto, podemos fazer muitas outras melhorias, mas com o tempo se tudo ir se encaminhando bem, vamos aplicando elas (como o Cargo Workspaces)
 
-![[Pasted image 20260530103031.png|240]]
+![Estrutura Final](midia/Pasted image 20260530103031.png)
 
 Então aqui dou um tchau, beijos!
