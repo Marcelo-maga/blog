@@ -1,7 +1,7 @@
 ---
 title: Arrumando a Casa
 date: 2026-05-30
-slug: organize-super-minigrap
+slug: arrumando-a-casa
 tags:
   - rust
 stream: artigos

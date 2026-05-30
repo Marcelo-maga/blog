@@ -4,26 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bc5266d7eabcfa8e",
+        "id": "3c0f768a87fb7910",
         "type": "tabs",
         "children": [
           {
-            "id": "fab09b4cc39b04d5",
+            "id": "d765d0910b16d206",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artigos/SuperMiniGrep/Arrumando a casa!.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Arrumando a casa!"
+              "title": "Nova aba"
             }
           },
           {
-            "id": "2903c1dcabd791b7",
+            "id": "fe1a1d43d9df5f21",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -195,8 +190,10 @@
       "file-cleaner-redux:Clean files": false
     }
   },
-  "active": "2903c1dcabd791b7",
+  "active": "fe1a1d43d9df5f21",
   "lastOpenFiles": [
+    "Artigos/SuperMiniGrep/Super minigrep.md",
+    "Artigos/SuperMiniGrep/Arrumando a casa!.md",
     "midia/super-minigrep/{3}.png",
     "midia/super-minigrep/{2}.png",
     "midia/super-minigrep/{1}.png",
@@ -208,10 +205,7 @@
     "midia/super-mini-grep/Pasted image 20260530102429.png",
     "midia/super-mini-grep/Pasted image 20250408204102.png",
     "midia/super-mini-grep/Pasted image 20260530094010.png",
-    "midia/super-mini-grep/Pasted image 20260530103031.png",
     "midia/super-mini-grep",
-    "Artigos/SuperMiniGrep/Super minigrep.md",
-    "Artigos/SuperMiniGrep/Arrumando a casa!.md",
     "Artigos/SuperMiniGrep",
     "Artigos/Cognitive Offloading.md",
     "Artigos/().md",
