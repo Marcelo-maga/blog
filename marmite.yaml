@@ -18,7 +18,6 @@ menu:
     - ["Início", "index.html"]
     - ["Posts", "archive.html"]
     - ["Grafo", "grafo.html"]
-    - ["Arquivo", "archive.html"]
     - ["Sobre", "about.html"]
 
 default_author: editorial
