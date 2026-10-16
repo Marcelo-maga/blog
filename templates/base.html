@@ -43,7 +43,7 @@
                 {% set name = item.0 %}
                 {% set url = item.1 %}
                 <li>
-                    {% if current_page and (current_page == url or (url == "artigos.html" and current_page is starting_with("artigos")) or (url == "notas.html" and current_page is starting_with("notas")) or (url == "archive.html" and current_page is starting_with("archive"))) %}
+                    {% if current_page and (current_page == url or (url == "posts.html" and current_page is starting_with("posts")) or (url == "archive.html" and current_page is starting_with("archive"))) %}
                     <span class="nav-link nav-link-active">{{ name | upper }}</span>
                     {% else %}
                     <a class="nav-link" {% if url is starting_with("http") %}href="{{url}}" target="_blank"{% else %}href="{{url_for(path=url)}}"{% endif %}>{{ name | upper }}</a>
@@ -66,7 +66,7 @@
         <section class="search-dialog" role="dialog" aria-modal="true" aria-label="Buscar no blog">
             <div class="search-command">
                 <span class="icon-search" aria-hidden="true"></span>
-                <input type="search" placeholder="Buscar notas, artigos ou tags" autocomplete="off" spellcheck="false" data-search-input>
+                <input type="search" placeholder="Buscar posts ou tags" autocomplete="off" spellcheck="false" data-search-input>
                 <button type="button" aria-label="Fechar busca" data-search-close>ESC</button>
             </div>
             <div class="search-status" data-search-status>Digite para buscar no vault.</div>

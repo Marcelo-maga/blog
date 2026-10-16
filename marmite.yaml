@@ -1,5 +1,5 @@
 name: marcelo.txt
-tagline: Estudos, notas e artigos sobre software, sistemas e arquitetura.
+tagline: Posts sobre software, sistemas e arquitetura.
 url: https://marcelo-maga.github.io
 footer: ""
 language: pt-BR
@@ -16,8 +16,7 @@ default_date_format: "%d/%m/%Y"
 
 menu:
     - ["Início", "index.html"]
-    - ["Artigos", "artigos.html"]
-    - ["Notas", "notas.html"]
+    - ["Posts", "archive.html"]
     - ["Grafo", "grafo.html"]
     - ["Arquivo", "archive.html"]
     - ["Sobre", "about.html"]
@@ -40,12 +39,6 @@ markdown_parser:
     extension:
         wikilinks_title_before_pipe: false
         wikilinks_title_after_pipe: true
-
-streams:
-    notas:
-        display_name: "Notas"
-    artigos:
-        display_name: "Artigos"
 
 extra:
     colorscheme_toggle: false

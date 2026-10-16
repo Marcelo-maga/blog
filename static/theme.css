@@ -928,7 +928,14 @@ canvas {
   max-width: 100%;
 }
 
+.article-content img {
+  display: block;
+  height: auto;
+  margin-inline: auto;
+}
+
 .article-content figure {
+  overflow: hidden;
   margin: 2.5rem 0;
   border: 1px solid var(--line);
   background: var(--surface);
@@ -1108,8 +1115,7 @@ canvas {
   border-radius: 50%;
 }
 
-.graph-dot-note { background: #b8b8b8; }
-.graph-dot-article { background: #e6df66; }
+.graph-dot-post { background: #e6df66; }
 .graph-dot-tag { background: #39d071; }
 
 .graph-actions {

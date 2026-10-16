@@ -6,7 +6,7 @@ CONTENT_ROOT="$ROOT/content/vault"
 OUTPUT="$ROOT/static/graph-data.json"
 TMP_OUTPUT="${OUTPUT}.$$.tmp"
 
-find "$CONTENT_ROOT/Notes" "$CONTENT_ROOT/Artigos" -type f -name '*.md' 2>/dev/null | sort | awk '
+find "$CONTENT_ROOT/content" -type f -name '*.md' 2>/dev/null | sort | awk '
 function basename(path, parts, n) {
   n = split(path, parts, "/")
   return parts[n]
@@ -55,12 +55,9 @@ function save_item() {
   if (current_file == "") return
   if (title == "") title = slug_from_file(current_file)
   if (slug == "") slug = slug_from_file(current_file)
-  if (stream == "") stream = (current_file ~ /\/Artigos\//) ? "artigos" : "notas"
-
   count++
   item_title[count] = title
   item_slug[count] = slug
-  item_stream[count] = stream
   item_path[count] = current_file
   title_to_id[title] = "content:" slug
 
@@ -81,7 +78,6 @@ function reset_item(path) {
   current_file = path
   title = ""
   slug = ""
-  stream = ""
   in_frontmatter = 0
   reading_tags = 0
   tag_count = 0
@@ -126,10 +122,6 @@ function read_file(path, line, tagline, match_text) {
         slug = line
         sub(/^slug:[[:space:]]*/, "", slug)
         slug = clean(slug)
-      } else if (line ~ /^stream:[[:space:]]*/) {
-        stream = line
-        sub(/^stream:[[:space:]]*/, "", stream)
-        stream = clean(stream)
       } else if (line ~ /^tags:[[:space:]]*\[/) {
         tagline = line
         sub(/^tags:[[:space:]]*\[/, "", tagline)
@@ -168,11 +160,10 @@ END {
 
   first_node = 1
   for (i = 1; i <= count; i++) {
-    kind = item_stream[i] == "artigos" ? "article" : "note"
-    prefix = item_stream[i] == "artigos" ? "artigos-" : "notas-"
+    kind = "post"
     if (!first_node) print ","
     first_node = 0
-    printf "    {\"id\": %s, \"label\": %s, \"kind\": %s, \"url\": %s, \"tags\": [", json("content:" item_slug[i]), json(item_title[i]), json(kind), json(prefix item_slug[i] ".html")
+    printf "    {\"id\": %s, \"label\": %s, \"kind\": %s, \"url\": %s, \"tags\": [", json("content:" item_slug[i]), json(item_title[i]), json(kind), json(item_slug[i] ".html")
     tag_value_count = split(item_tags[i], tag_values, "\034")
     first_tag = 1
     for (j = 1; j <= tag_value_count; j++) {

@@ -135,9 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ));
 
     const itemType = (item) => {
-      if (item.slug?.startsWith("artigos-")) return "ARTIGO";
-      if (item.slug?.startsWith("notas-")) return "NOTA";
-      return "PAGINA";
+      if (item.slug === "about" || item.slug === "grafo") return "PAGINA";
+      return "POST";
     };
 
     const itemText = (item) => {

@@ -8,8 +8,7 @@
   const labelsButton = document.querySelector("[data-graph-labels]");
   const ctx = canvas.getContext("2d");
   const colors = {
-    note: "#b8b8b8",
-    article: "#e6df66",
+    post: "#e6df66",
     tag: "#39d071",
   };
 
@@ -52,13 +51,11 @@
     const cy = height / 2;
     const groups = {
       tag: graph.nodes.filter((node) => node.kind === "tag"),
-      article: graph.nodes.filter((node) => node.kind === "article"),
-      note: graph.nodes.filter((node) => node.kind === "note"),
+      post: graph.nodes.filter((node) => node.kind === "post"),
     };
     const outerRadius = Math.min(width, height) * 0.34;
-    const noteRadius = Math.max(96, outerRadius);
+    const postRadius = Math.max(96, outerRadius);
     const tagRadius = Math.max(34, outerRadius * 0.34);
-    const articleRadius = Math.max(64, outerRadius * 0.56);
 
     function placeRing(nodes, radius, angleOffset) {
       nodes.forEach((node, index) => {
@@ -72,8 +69,7 @@
     }
 
     placeRing(groups.tag, tagRadius, -Math.PI / 2);
-    placeRing(groups.article, articleRadius, Math.PI / 5);
-    placeRing(groups.note, noteRadius, 0);
+    placeRing(groups.post, postRadius, 0);
     graph.nodes.forEach((node) => {
       node.vx = 0;
       node.vy = 0;
@@ -113,7 +109,7 @@
     const byId = new Map();
     graph.nodes = data.nodes.map((node) => ({
       ...node,
-      radius: node.kind === "tag" ? 5.2 : node.kind === "article" ? 5.6 : 4.6,
+      radius: node.kind === "tag" ? 5.2 : node.kind === "post" ? 5.6 : 4.6,
       x: width / 2,
       y: height / 2,
       vx: 0,
@@ -232,7 +228,7 @@
     }
 
     for (const node of graph.nodes) {
-      ctx.fillStyle = colors[node.kind] || colors.note;
+      ctx.fillStyle = colors[node.kind] || colors.post;
       ctx.beginPath();
       ctx.arc(node.x, node.y, node === hovered ? node.radius + 2.5 : node.radius, 0, Math.PI * 2);
       ctx.fill();

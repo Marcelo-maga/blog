@@ -1,14 +1,13 @@
 +++
 title = "Grafo"
-description = "Mapa visual das notas, artigos, tags e links do vault."
+description = "Mapa visual dos posts, tags e links do vault."
 slug = "grafo"
 +++
 
 <section class="graph-view" data-graph-view>
   <div class="graph-toolbar">
     <div class="graph-legend" aria-label="Legenda do grafo">
-      <span><i class="graph-dot graph-dot-note"></i>Notas</span>
-      <span><i class="graph-dot graph-dot-article"></i>Artigos</span>
+      <span><i class="graph-dot graph-dot-post"></i>Posts</span>
       <span><i class="graph-dot graph-dot-tag"></i>Tags</span>
     </div>
     <div class="graph-actions">

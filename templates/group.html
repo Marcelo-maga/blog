@@ -10,7 +10,7 @@
       <span>CONSULTA: ARQUIVO</span>
     </div>
     <h1>Arquivo</h1>
-    <p>Registro cronológico dos textos e notas publicados, organizado por ano.</p>
+    <p>Registro cronológico dos posts publicados, organizado por ano.</p>
   </header>
 
   <div class="archive-group-list">
@@ -42,7 +42,7 @@
         {% for item in page_items %}
         {% if item.slug != "about" %}
         <article class="archive-entry">
-          <time>NOTE</time>
+          <time>POST</time>
           <h3><a href="{{url_for(path=item.slug ~ '.html')}}">{{ item.slug }}</a></h3>
         </article>
         {% endif %}
@@ -59,9 +59,8 @@
         <article class="group-details h-feed">
             <h1 class="p-name" style="display: none;">{{ title }}</h1>
             {% for name, items in group(kind=kind) -%}
-            {% if kind == "stream" and name == "draft" %}{% continue %}{% endif %}
             <details {%if loop.index == 1%}open{%endif%}>
-                <summary role="button" class="outline contrast {{kind}}-group-title">{%if kind == "author" %}{% include "group_author_avatar.html" ignore missing%}{% endif %}{% if kind == "stream" %}{{ stream_display_name(stream=name) }}{% elif kind == "series" %}{{ series_display_name(series=name) }}{% else %}{{name}}{% endif %} <sup>{{items | remove_draft | length}}</sup></summary>
+                <summary role="button" class="outline contrast {{kind}}-group-title">{%if kind == "author" %}{% include "group_author_avatar.html" ignore missing%}{% endif %}{% if kind == "series" %}{{ series_display_name(series=name) }}{% else %}{{name}}{% endif %} <sup>{{items | remove_draft | length}}</sup></summary>
                 <ul>
                 {% for item in items | remove_draft | slice(end=10) %}
                     <li class="h-entry">
@@ -70,9 +69,7 @@
                     </li>
                 {% endfor %}
                 {% set slug = name | trim | slugify %}
-                {% if kind != "stream" %}
                 {% set slug = kind ~ "-" ~ slug %}
-                {% endif %}
                 {% set link = slug ~ ".html"%}
                 <li><a href="{{url_for(path=link)}}">more &rarr;</a></li>
             </ul>
