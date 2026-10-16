@@ -18,13 +18,6 @@
     {{ hero }}
     <div class="section-rule"></div>
   </header>
-  {% else %}
-  <header class="hero-block home-hero">
-    <div class="hero-shell">
-      <h1>marcelo.txt</h1>
-    </div>
-    <div class="section-rule"></div>
-  </header>
   {% endif %} {% set posts = site_data.posts | remove_draft |
   sort(attribute="date") | reverse %} {% if posts | length > 0 %}
   <section class="home-latest h-feed">
