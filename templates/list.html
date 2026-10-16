@@ -1,22 +1,10 @@
-{% extends "base.html" %}
-
-{% block seo %}
-{{ super() }}
-{%- if author is defined -%}
-{% include "json_ld_author.html" ignore missing %}
-{%- else -%}
-{% include "json_ld_index.html" ignore missing %}
-{%- endif -%}
-{% endblock %}
-
-{% block main %}
-{% set is_archive_index = current_page == "archive.html" %}
-{% set is_archive_year = current_page is starting_with("archive-") %}
-{% if is_archive_year %}
-{% set year_label = current_page | replace(from="archive-", to="") | replace(from=".html", to="") %}
-{% endif %}
-
-{% if is_archive_index %}
+{% extends "base.html" %} {% block seo %} {{ super() }} {%- if author is defined
+-%} {% include "json_ld_author.html" ignore missing %} {%- else -%} {% include
+"json_ld_index.html" ignore missing %} {%- endif -%} {% endblock %} {% block
+main %} {% set is_archive_index = current_page == "archive.html" %} {% set
+is_archive_year = current_page is starting_with("archive-") %} {% if
+is_archive_year %} {% set year_label = current_page | replace(from="archive-",
+to="") | replace(from=".html", to="") %} {% endif %} {% if is_archive_index %}
 {% set archive_groups = group(kind="archive") %}
 <section class="archive-shell">
   <header class="archive-header">
@@ -29,8 +17,7 @@
   </header>
 
   <div class="archive-group-list">
-    {% if archive_groups | length > 0 %}
-    {% for year, items in archive_groups %}
+    {% if archive_groups | length > 0 %} {% for year, items in archive_groups %}
     <section class="archive-group">
       <div class="archive-year-row">
         <h2>{{ year }}</h2>
@@ -39,29 +26,32 @@
       <div class="archive-entry-list">
         {% for item in items | sort(attribute="date") | reverse %}
         <article class="archive-entry">
-          <time datetime="{{ item.date | date(format='%+') }}">{{ item.date | date(format="%m-%d") }}</time>
-          <h3><a href="{{url_for(path=item.slug ~ '.html')}}">{{ item.title }}</a></h3>
+          <time datetime="{{ item.date | date(format='%+') }}"
+            >{{ item.date | date(format="%m-%d") }}</time
+          >
+          <h3>
+            <a href="{{url_for(path=item.slug ~ '.html')}}">{{ item.title }}</a>
+          </h3>
         </article>
         {% endfor %}
       </div>
     </section>
-    {% endfor %}
-    {% else %}
-    {% set page_items = site_data.pages | remove_draft | sort(attribute="title") %}
+    {% endfor %} {% else %} {% set page_items = site_data.pages | remove_draft |
+    sort(attribute="title") %}
     <section class="archive-group">
       <div class="archive-year-row">
         <h2>Second Brain</h2>
         <span>{{ page_items | length }} ENTRIES</span>
       </div>
       <div class="archive-entry-list">
-        {% for item in page_items %}
-        {% if item.slug != "about" %}
+        {% for item in page_items %} {% if item.slug != "about" %}
         <article class="archive-entry">
           <time>POST</time>
-          <h3><a href="{{url_for(path=item.slug ~ '.html')}}">{{ item.slug }}</a></h3>
+          <h3>
+            <a href="{{url_for(path=item.slug ~ '.html')}}">{{ item.slug }}</a>
+          </h3>
         </article>
-        {% endif %}
-        {% endfor %}
+        {% endif %} {% endfor %}
       </div>
     </section>
     {% endif %}
@@ -86,29 +76,35 @@
     <div class="archive-entry-list">
       {% for item in content_list | sort(attribute="date") | reverse %}
       <article class="archive-entry">
-        <time datetime="{{ item.date | date(format='%+') }}">{{ item.date | date(format="%m-%d") }}</time>
-        <h3><a href="{{url_for(path=item.slug ~ '.html')}}">{{ item.title }}</a></h3>
+        <time datetime="{{ item.date | date(format='%+') }}"
+          >{{ item.date | date(format="%m-%d") }}</time
+        >
+        <h3>
+          <a href="{{url_for(path=item.slug ~ '.html')}}">{{ item.title }}</a>
+        </h3>
       </article>
       {% endfor %}
     </div>
   </section>
 </section>
-{% else %}
+{% else %} {% if current_page == "index.html" %}
+<header class="hero-block home-hero">
+  {{ hero }}
+  <div class="section-rule"></div>
+</header>
+{% endif %}
 <section class="generic-list-shell h-feed">
-  {% if title and current_page != "index.html" and author is not defined %}
-  {% set display_title = title %}
-  {% if current_page == "posts.html" or current_page is starting_with("posts-") %}
-  {% set display_title = "Posts" %}
+  {% if title and current_page != "index.html" and author is not defined %} {%
+  set display_title = title %} {% if current_page == "posts.html" or
+  current_page is starting_with("posts-") %} {% set display_title = "Posts" %}
   {% endif %}
   <header class="generic-list-header">
     <p class="archive-kicker">VISÃO</p>
     <h1>{{ display_title }}</h1>
   </header>
-  {% endif %}
-
-  {% if author is defined %}
+  {% endif %} {% if author is defined %}
   <section class="author-panel">
-    <img src="{{url_for(path=author.avatar)}}" alt="{{ author.name }}">
+    <img src="{{url_for(path=author.avatar)}}" alt="{{ author.name }}" />
     <div>
       <h3>{{author.name}}</h3>
       <p>{{author.bio}}</p>
@@ -121,27 +117,41 @@
     <article class="feed-card h-entry">
       <div class="feed-meta-row">
         {% if content.date %}
-        <span class="meta-date">{{ content.date | date(format="%Y-%m-%d") }}</span>
+        <span class="meta-date"
+          >{{ content.date | date(format="%Y-%m-%d") }}</span
+        >
         {% endif %}
         <div class="chip-row">
           {% for tag in content.tags | slice(end=2) %}
-          <span class="meta-chip">{{ tag | upper | replace(from=" ", to="_") }}</span>
+          <span class="meta-chip"
+            >{{ tag | upper | replace(from=" ", to="_") }}</span
+          >
           {% endfor %}
         </div>
       </div>
-      <h2 class="feed-title p-name"><a class="u-url" href="{{url_for(path=content.slug ~ '.html')}}">{{ content.title }}</a></h2>
+      <h2 class="feed-title p-name">
+        <a class="u-url" href="{{url_for(path=content.slug ~ '.html')}}"
+          >{{ content.title }}</a
+        >
+      </h2>
       {% if content.description and content.description != "null" %}
-      <p class="feed-summary p-summary">{{ content.description | replace(from='"', to="") | truncate(length=220, end="...") }}</p>
+      <p class="feed-summary p-summary">
+        {{ content.description | replace(from='"', to="") | truncate(length=220,
+        end="...") }}
+      </p>
       {% elif content.html and content.html != "null" %}
-      <p class="feed-summary p-summary">{{ content.html | striptags | trim_start_matches(pat=content.title) | truncate(length=220, end="...") }}</p>
+      <p class="feed-summary p-summary">
+        {{ content.html | striptags | trim_start_matches(pat=content.title) |
+        truncate(length=220, end="...") }}
+      </p>
       {% endif %}
-      <a class="feed-readmore" href="{{url_for(path=content.slug ~ '.html')}}">LER <span aria-hidden="true">&rarr;</span></a>
+      <a class="feed-readmore" href="{{url_for(path=content.slug ~ '.html')}}"
+        >LER <span aria-hidden="true">&rarr;</span></a
+      >
     </article>
     {% endfor %}
   </div>
-  {% if total_pages is defined and total_pages > 1 %}
-  {% include "pagination.html" ignore missing %}
-  {% endif %}
+  {% if total_pages is defined and total_pages > 1 %} {% include
+  "pagination.html" ignore missing %} {% endif %}
 </section>
-{% endif %}
-{% endblock %}
+{% endif %} {% endblock %}

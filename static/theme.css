@@ -614,7 +614,7 @@ canvas {
 
 .home-lane-kicker,
 .home-section-header a {
-  color: var(--text-dim);
+  color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.78rem;
 }
