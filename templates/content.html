@@ -37,6 +37,7 @@
   {% set author = site.authors[author_key] %}
   {% set words = content.html | striptags | wordcount %}
   {% set reading_time = (words / 220) | round(method="ceil") %}
+  {% if content.slug != "grafo" %}
   <header class="article-header">
     {% if content.tags %}
     <div class="chip-row article-kickers">
@@ -59,6 +60,7 @@
       </a>
     </div>
   </header>
+  {% endif %}
 
   <div class="content-html article-content e-content">{{ content.html }}</div>
 
