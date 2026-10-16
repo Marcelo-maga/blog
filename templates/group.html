@@ -55,7 +55,7 @@ archive_groups = group(kind=kind) %}
 <article class="group-details h-feed">
   <h1 class="p-name" style="display: none">{{ title }}</h1>
   {% for name, items in group(kind=kind) -%}
-  <details {% if loop.index="" ="1" %}open{% endif %}>
+  <details {% if loop.first %}open{% endif %}>
     <summary role="button" class="outline contrast {{kind}}-group-title">
       {%if kind == "author" %}{% include "group_author_avatar.html" ignore
       missing%}{% endif %}{% if kind == "series" %}{{
