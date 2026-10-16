@@ -129,7 +129,7 @@ canvas {
 }
 
 .nav-link {
-  color: var(--text-dim);
+  color: var(--accent);
   font-size: 0.74rem;
   text-transform: uppercase;
 }
@@ -1238,7 +1238,7 @@ canvas {
   padding: 0.35rem 0.7rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.78rem;
-  color: var(--text);
+  color: var(--accent);
 }
 
 .tag-list a:hover {
@@ -1263,7 +1263,7 @@ canvas {
   border: 1px solid var(--line);
   background: rgba(73, 61, 48, 0.03);
   padding: 0.9rem 1rem;
-  color: var(--text);
+  color: var(--accent);
 }
 
 .backlink-list a span {
@@ -1321,7 +1321,7 @@ canvas {
 }
 
 .footer-grid a {
-  color: var(--text-dim);
+  color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
