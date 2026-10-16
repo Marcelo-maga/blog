@@ -1200,6 +1200,15 @@ canvas {
   width: 100%;
 }
 
+.comments-section .giscus-frame {
+  display: block;
+  min-height: 180px;
+  padding: 0.25rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 0.65rem;
+  background: var(--surface);
+}
+
 .small-label {
   margin: 0 0 1rem;
   color: var(--text-dim);

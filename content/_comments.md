@@ -10,7 +10,7 @@
           data-reactions-enabled="1"
           data-emit-metadata="0"
           data-input-position="bottom"
-          data-theme="dark_dimmed"
+          data-theme="light"
           data-lang="pt"
           data-loading="lazy"
           crossorigin="anonymous"
