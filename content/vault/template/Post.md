@@ -4,7 +4,7 @@ date: "{{date:YYYY-MM-DD}}"
 slug:
 tags:
   -
-description:
+description: "Resumo curto e específico do post para mecanismos de busca."
 ---
 
 # Introdução

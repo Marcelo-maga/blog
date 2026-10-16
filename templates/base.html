@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#f7f4ee">
     <meta name="generator" content="Marmite">
     {% block seo %}
+    <meta name="description" content="{{ site.tagline }}">
     <meta property="og:title" content="{{ site.name }}">
     <meta property="og:description" content="{{ site.tagline }}">
     {% if site.url %}
@@ -13,6 +15,9 @@
     {% endif %}
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{site.name}}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.name }}">
+    <meta name="twitter:description" content="{{ site.tagline }}">
     {% endblock %}
     {% block head %}
     <title>{% if title %}{{title}} | {% endif %}{{ site.name }}</title>
