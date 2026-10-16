@@ -10,7 +10,6 @@ enable_search: true
 search_title: Buscar
 search_show_matches: true
 search_match_count: 3
-card_image: static/og-card.svg
 media_path: vault/midia
 default_date_format: "%d/%m/%Y"
 

@@ -1115,7 +1115,7 @@ canvas {
 }
 
 .graph-dot-post { background: var(--accent); }
-.graph-dot-tag { background: #159447; }
+.graph-dot-tag { background: #176b63; }
 
 .graph-actions {
   gap: 0.6rem;
@@ -1147,6 +1147,11 @@ canvas {
   margin-left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 68, 0, 0.05), transparent 45%),
+    var(--surface);
 }
 
 #vault-graph {
@@ -1160,8 +1165,8 @@ canvas {
   left: 0;
   top: 0;
   max-width: 260px;
-  border: 1px solid var(--line);
-  background: rgba(255, 253, 248, 0.96);
+  border: 1px solid var(--accent);
+  background: var(--surface);
   color: var(--text);
   padding: 0.45rem 0.6rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;

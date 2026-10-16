@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#f7f4ee"/>
-  <circle cx="920" cy="150" r="110" fill="#ff4400" fill-opacity="0.08"/>
-  <circle cx="920" cy="150" r="64" fill="none" stroke="#ff4400" stroke-width="4"/>
-  <circle cx="920" cy="150" r="16" fill="#ff4400"/>
-  <text x="100" y="250" fill="#d93600" font-family="Arial, sans-serif" font-size="34" letter-spacing="8">SOFTWARE ENGINEERING</text>
-  <text x="100" y="340" fill="#25211d" font-family="Arial, sans-serif" font-size="74" font-weight="700">Posts de Engenharia</text>
-  <text x="100" y="408" fill="#625b54" font-family="Arial, sans-serif" font-size="30">Software, arquitetura e aprendizado continuo.</text>
-</svg>

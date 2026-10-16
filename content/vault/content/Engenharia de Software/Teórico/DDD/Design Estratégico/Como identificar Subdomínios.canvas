@@ -1,9 +1,9 @@
 {
 	"nodes":[
 		{"id":"504cd9777d63825f","type":"text","text":"# **Pode arriscar o negocio?**","x":-900,"y":440,"width":250,"height":80,"color":"6"},
-		{"id":"c3bc6b99aa25b2c8","type":"file","file":"Notes/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio Genérico (Generic Domain).md","x":-975,"y":660,"width":400,"height":400,"color":"6"},
-		{"id":"73d8ae44aa80c9be","type":"file","file":"Notes/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio Principal (Core Domain).md","x":-480,"y":660,"width":400,"height":400,"color":"6"},
-		{"id":"578cf7a82b463822","type":"file","file":"Notes/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio de Apoio (Supporting Domain).md","x":20,"y":660,"width":400,"height":400,"color":"6"},
+		{"id":"c3bc6b99aa25b2c8","type":"file","file":"content/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio Genérico (Generic Domain).md","x":-975,"y":660,"width":400,"height":400,"color":"6"},
+		{"id":"73d8ae44aa80c9be","type":"file","file":"content/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio Principal (Core Domain).md","x":-480,"y":660,"width":400,"height":400,"color":"6"},
+		{"id":"578cf7a82b463822","type":"file","file":"content/Engenharia de Software/Teórico/DDD/Design Estratégico/Domínio de Apoio (Supporting Domain).md","x":20,"y":660,"width":400,"height":400,"color":"6"},
 		{"id":"1a68251ebed40719","type":"text","text":"# **A solução pode ser comprada??**","x":-405,"y":160,"width":250,"height":50,"color":"6"},
 		{"id":"387c1c3ab816bac9","x":95,"y":440,"width":250,"height":60,"color":"6","type":"text","text":"# **A Regra de negocio é complexa?**"}
 	],

@@ -8,8 +8,8 @@
   const labelsButton = document.querySelector("[data-graph-labels]");
   const ctx = canvas.getContext("2d");
   const colors = {
-    post: "#e6df66",
-    tag: "#39d071",
+    post: "#ff4400",
+    tag: "#176b63",
   };
 
   let graph = { nodes: [], edges: [] };
@@ -220,7 +220,7 @@
 
     ctx.lineWidth = 1 / scale;
     for (const edge of graph.edges) {
-      ctx.strokeStyle = edge.kind === "tag" ? "rgba(57, 208, 113, 0.2)" : "rgba(185, 185, 185, 0.18)";
+      ctx.strokeStyle = edge.kind === "tag" ? "rgba(23, 107, 99, 0.34)" : "rgba(73, 61, 48, 0.26)";
       ctx.beginPath();
       ctx.moveTo(edge.sourceNode.x, edge.sourceNode.y);
       ctx.lineTo(edge.targetNode.x, edge.targetNode.y);
@@ -239,7 +239,7 @@
       ctx.textBaseline = "middle";
       for (const node of graph.nodes) {
         if (!showLabels && node !== hovered) continue;
-        ctx.fillStyle = "rgba(229, 226, 225, 0.92)";
+        ctx.fillStyle = "#25211d";
         ctx.fillText(node.label, node.x + node.radius + 7, node.y);
       }
     }
