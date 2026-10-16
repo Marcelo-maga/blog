@@ -14,8 +14,13 @@
   --max: 720px;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;
@@ -847,7 +852,7 @@ canvas {
   gap: 1rem;
 }
 
-.article-meta-left span + span::before {
+.article-meta-left span+span::before {
   content: "|";
   margin-right: 1rem;
   color: var(--meta);
@@ -893,7 +898,7 @@ canvas {
   overflow-wrap: anywhere;
 }
 
-.article-content > *:first-child {
+.article-content>*:first-child {
   margin-top: 0;
 }
 
@@ -1038,7 +1043,7 @@ canvas {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
-.article-content :not(pre) > code {
+.article-content :not(pre)>code {
   background: rgba(73, 61, 48, 0.08);
   padding: 0.1rem 0.3rem;
 }
@@ -1114,8 +1119,13 @@ canvas {
   border-radius: 50%;
 }
 
-.graph-dot-post { background: var(--accent); }
-.graph-dot-tag { background: #176b63; }
+.graph-dot-post {
+  background: var(--accent);
+}
+
+.graph-dot-tag {
+  background: #176b63;
+}
 
 .graph-actions {
   gap: 0.6rem;
