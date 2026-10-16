@@ -49,7 +49,7 @@ body[class*="page-archive-"]::after {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration: none;
 }
 
