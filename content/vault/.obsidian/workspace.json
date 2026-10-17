@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "63297b1540b2acf8",
+        "id": "302051401ee6d9e9",
         "type": "tabs",
         "children": [
           {
-            "id": "678ce6cac85dbba2",
+            "id": "80745dd71c2c8e43",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Blog novo (quase isso).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Blog novo (quase isso)"
+              "title": "Nova aba"
             }
           }
         ]
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Blog novo (quase isso).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Blog novo (quase isso).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +155,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Blog novo (quase isso).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,8 +181,9 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "678ce6cac85dbba2",
+  "active": "80745dd71c2c8e43",
   "lastOpenFiles": [
+    "content/Blog novo (quase isso).md",
     "content/ATK Z1 Ultimate V2.md",
     "content/about.md",
     "file:C:/Users/marce/Documents/repos/blog/content/about.md",

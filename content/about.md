@@ -22,7 +22,7 @@ Atualmente estou trabalhando na [Melhor Envio]([https://www.linkedin.com/in/marc
 
 Sempre fui o menino dos compiuters, então venho cultivando meu ambiente ao longos do anos, venho sempre tentando trocar algumas coisas pelo mais puro consumismo, atualmente ele esta assim, mas provavelmente em 1 ou poucos anos esteja completamente diferente.
 
-![[midia/20261017_150124 1.jpg]]
+![[./vault/midia/20261017_150124 1.jpg]]
 
 
 aqui uma lista para quem quiser saber oq cada coisa é ai, pode ser que algum desses tenham review aqui, então fique atento!
