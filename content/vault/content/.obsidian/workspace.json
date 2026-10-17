@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog novo (quase isso).md",
+                "file": "SuperMiniGrep/Super minigrep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blog novo (quase isso)"
+              "title": "Super minigrep"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blog novo (quase isso).md",
+                "file": "SuperMiniGrep/Super minigrep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blog novo (quase isso).md",
+                "file": "SuperMiniGrep/Super minigrep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blog novo (quase isso).md",
+                "file": "SuperMiniGrep/Super minigrep.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -189,5 +189,10 @@
     }
   },
   "active": "8e910eab6e606e41",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "SuperMiniGrep/Arrumando a casa!.md",
+    "SuperMiniGrep/Super minigrep.md",
+    "ATK Z1 Ultimate V2.md",
+    "Blog novo (quase isso).md"
+  ]
 }
