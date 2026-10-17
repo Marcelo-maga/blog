@@ -1,10 +1,10 @@
 ---
-title: "Blog novo (quase isso)"
+title: Blog novo (quase isso)
 date: 2026-10-16
 slug: blog-novo
-tags: 
+tags:
   - chore
-description: "Anunciando as mudanças"
+description: Anunciando as mudanças ao blog
 ---
 
 # Introdução
