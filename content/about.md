@@ -24,21 +24,25 @@ Sempre fui o menino dos compiuters, então venho cultivando meu ambiente ao long
 
 ![[./vault/midia/20261017_150124 1.jpg]]
 
+Aí vai a lista para quem quiser saber o que é cada coisa. Pode ser que algum desses itens tenha review por aqui, então fique atento!
 
-aqui uma lista para quem quiser saber oq cada coisa é ai, pode ser que algum desses tenham review aqui, então fique atento!
-
-Monitor: AOC 180hz 27 polegadas
-Mouse: [[ATK Z1 Ultimate V2]]
-Teclado: AULA F87
-Pad: Fantech AGILE MP453
-Headphone: JBL Quantum 360 Wireless
-Mic: Blue SnowBall
-TWS: Sansung Galaxy Buds 3 FE
+| Categoria | Item                     |
+| --------- | ------------------------ |
+| Monitor   | AOC 180 Hz, 27 polegadas |
+| Mouse     | [[ATK Z1 Ultimate V2]]   |
+| Teclado   | AULA F87                 |
+| Mouse pad | Fantech AGILE MP453      |
+| Headphone | JBL Quantum 360 Wireless |
+| Microfone | Blue SnowBall            |
+| TWS       | Samsung Galaxy Buds 3 FE |
 
 ### PC
-I5-9400f 
-16gb DDR4 2666hz
-GTX 1660
-SSD M2 500gb Lexar
 
-um funko do Jotaro
+| Componente     | Especificação           |
+| -------------- | ----------------------- |
+| Processador    | Intel Core i5-9400F     |
+| Memória        | 16 GB DDR4 2666 MHz     |
+| Placa de vídeo | GTX 1660                |
+| Armazenamento  | SSD M.2 Lexar de 500 GB |
+
+e o principal um Funko do Jotaro!
