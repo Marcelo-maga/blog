@@ -16,7 +16,7 @@ Aqui estão as redes sociais mais importantes até então:
 
 ## Carreira
 
-Atualmente estou trabalhando na [Melhor Envio]([https://www.linkedin.com/in/marcelo-maga/](https://melhorenvio.com.br)) como Analista II, antes disso trampava no [Cuca Fresca Informática](https://www.cucafresca.com.br/), mas já era desenvolvedor a um tempo antes disso tudo, por volta de 2018 quando entrei na ETEC aqui da minha cidade e comecei no curso técnico de Analise e Desenvolvimento de Sistemas, onde tive meus primeiros contatos com esse mundo. Não vou ficar me estendendo muito aqui minha carreira ta toda quase no meu Linkedin então da uma olhadinha lá.
+Atualmente estou trabalhando na [Melhor Envio](https://melhorenvio.com.br) como Analista II, antes disso trampava no [Cuca Fresca Informática](https://www.cucafresca.com.br/), mas já era desenvolvedor a um tempo antes disso tudo, por volta de 2018 quando entrei na ETEC aqui da minha cidade e comecei no curso técnico de Analise e Desenvolvimento de Sistemas, onde tive meus primeiros contatos com esse mundo. Não vou ficar me estendendo muito aqui minha carreira ta toda quase no meu Linkedin então da uma olhadinha lá.
 
 ## Meu setup
 
