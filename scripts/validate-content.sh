@@ -125,7 +125,7 @@ function validate_note(path, line_number, line, match_text, target, inner, note_
 
     while (match(line, /\[\[[^]]+\]\]/)) {
       match_text = substr(line, RSTART, RLENGTH)
-      if (substr(match_text, 1, 1) != "!") {
+      if (!(RSTART > 1 && substr(line, RSTART - 1, 1) == "!")) {
         inner = substr(match_text, 3, length(match_text) - 4)
         sub(/\|.*$/, "", inner)
         sub(/#.*$/, "", inner)
