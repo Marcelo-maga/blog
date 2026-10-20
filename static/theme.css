@@ -565,9 +565,7 @@ canvas {
 }
 
 .home-intro {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -584,8 +582,10 @@ canvas {
   gap: 1rem;
   width: min(100%, 680px);
   margin-bottom: 3.5rem;
+  padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid var(--line);
 }
 
 .github-stats a {
