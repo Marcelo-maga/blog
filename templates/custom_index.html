@@ -13,14 +13,64 @@
 />
 {% endblock %} {% block main %}
 <div class="page-column home-shell">
-  <header class="hero-block home-hero">
-    <div class="hero-shell">
-      <h1>marcelo.txt</h1>
-    </div>
-    <div class="section-rule"></div>
-  </header>
   {% set posts = site_data.posts | remove_draft | sort(attribute="date") |
-  reverse %} {% if posts | length > 0 %}
+  reverse %}
+  <header class="home-bento">
+    <section class="bento-tile bento-intro">
+      <p class="bento-label">MARCELO.TXT / CADERNO ABERTO</p>
+      <h1>ideias sobre software,<br />sistemas e o resto.</h1>
+      <p class="bento-note">
+        Um arquivo pessoal de coisas que estou tentando entender.
+      </p>
+    </section>
+
+    <section class="bento-tile bento-stats" aria-label="Estatísticas do blog">
+      <p class="bento-label">ESTADO DO ARQUIVO</p>
+      <div class="bento-stat-main">
+        <strong>{{ posts | length }}</strong>
+        <span>itens<br />publicados</span>
+      </div>
+      <div class="bento-stat-foot">
+        <span>última atualização</span>
+        {% if posts.0.date %}<strong
+          >{{ posts.0.date | date(format="%Y") }}</strong
+        >{% endif %}
+      </div>
+    </section>
+
+    <a
+      class="bento-tile bento-github"
+      href="https://github.com/Marcelo-maga"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <div class="bento-tile-topline">
+        <span class="bento-label">GITHUB</span>
+        <span class="bento-arrow" aria-hidden="true">-&gt;</span>
+      </div>
+      <div class="github-mark" aria-hidden="true">◉</div>
+      <strong>Marcelo-maga</strong>
+      <span class="bento-muted">código, experimentos e rastros</span>
+      <img
+        class="github-contributions"
+        src="https://ghchart.rshah.org/ff4400/Marcelo-maga"
+        alt="Atividade recente no GitHub"
+        loading="lazy"
+      />
+    </a>
+
+    <a class="bento-tile bento-about" href="{{url_for(path='about.html')}}">
+      <p class="bento-label">SOBRE</p>
+      <div>
+        <strong>Eu, fora do código.</strong>
+        <p>
+          Trabalho, setup, carreira e as coisas que acabam aparecendo por aqui.
+        </p>
+      </div>
+      <span class="bento-arrow" aria-hidden="true">-&gt;</span>
+    </a>
+  </header>
+  {% if posts | length > 0 %}
   <section class="home-latest h-feed">
     <div class="home-section-header">
       <p class="archive-kicker">Últimos arquivos</p>

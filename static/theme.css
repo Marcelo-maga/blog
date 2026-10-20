@@ -564,18 +564,161 @@ canvas {
   align-items: stretch;
 }
 
-.home-hero {
-  margin-bottom: 3.5rem;
-  text-align: center;
+.home-bento {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+  grid-template-rows: minmax(250px, auto) minmax(210px, auto);
+  gap: 0.9rem;
 }
 
-.home-hero .hero-lead {
-  margin-left: auto;
-  margin-right: auto;
+.bento-tile {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  background: var(--surface);
 }
 
-.home-hero .home-actions {
-  justify-content: center;
+.bento-intro {
+  grid-row: span 2;
+  justify-content: flex-end;
+  background:
+    linear-gradient(135deg, rgba(255, 68, 0, 0.08), transparent 42%),
+    var(--surface);
+}
+
+.bento-intro h1 {
+  max-width: 620px;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.2rem, 6vw, 4.15rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.bento-label {
+  margin: 0;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+
+.bento-note,
+.bento-about p {
+  max-width: 31rem;
+  margin: 1.2rem 0 0;
+  color: var(--text-dim);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.bento-stats {
+  background: var(--text);
+  color: var(--surface);
+}
+
+.bento-stats .bento-label,
+.bento-stats .bento-stat-foot span {
+  color: #ff9a75;
+}
+
+.bento-stat-main {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.7rem;
+}
+
+.bento-stat-main strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(3.7rem, 9vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+}
+
+.bento-stat-main span,
+.bento-stat-foot {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.bento-stat-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(255, 253, 248, 0.2);
+}
+
+.bento-stat-foot strong {
+  color: var(--surface);
+  font-weight: 400;
+}
+
+.bento-github,
+.bento-about {
+  color: var(--text);
+  transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
+}
+
+.bento-github:hover,
+.bento-about:hover {
+  border-color: rgba(255, 68, 0, 0.7);
+  box-shadow: 0 0 4px rgba(255, 68, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.bento-tile-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bento-arrow {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.github-mark {
+  color: var(--accent);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.bento-github strong,
+.bento-about strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+
+.bento-muted {
+  color: var(--text-dim);
+  font-size: 0.82rem;
+}
+
+.github-contributions {
+  width: 100%;
+  height: 42px;
+  object-fit: cover;
+  object-position: left center;
+  opacity: 0.85;
+}
+
+.bento-about {
+  background: rgba(255, 68, 0, 0.08);
+}
+
+.bento-about>.bento-arrow {
+  align-self: flex-end;
 }
 
 .home-actions {
@@ -1472,6 +1615,16 @@ canvas {
 
   .home-shell {
     gap: 2.5rem;
+  }
+
+  .home-bento {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .bento-intro {
+    grid-row: auto;
+    min-height: 280px;
   }
 
   .home-lanes {
