@@ -17,21 +17,21 @@
   reverse %}
   <header class="home-bento">
     <section class="bento-tile bento-intro">
-      <p class="bento-label">MARCELO.TXT / CADERNO ABERTO</p>
-      <h1>ideias sobre software,<br />sistemas e o resto.</h1>
+      <p class="bento-label">MARCELO.TXT / NOTAS DE SOFTWARE</p>
+      <h1>pensando em voz alta<br />sobre software e sistemas.</h1>
       <p class="bento-note">
-        Um arquivo pessoal de coisas que estou tentando entender.
+        Textos e anotações de quem trabalha com código.
       </p>
     </section>
 
     <section class="bento-tile bento-stats" aria-label="Estatísticas do blog">
-      <p class="bento-label">ESTADO DO ARQUIVO</p>
+      <p class="bento-label">ARQUIVO</p>
       <div class="bento-stat-main">
         <strong>{{ posts | length }}</strong>
-        <span>itens<br />publicados</span>
+        <span>notas<br />publicadas</span>
       </div>
       <div class="bento-stat-foot">
-        <span>última atualização</span>
+        <span>mais recente</span>
         {% if posts.0.date %}<strong
           >{{ posts.0.date | date(format="%Y") }}</strong
         >{% endif %}
@@ -50,7 +50,7 @@
       </div>
       <div class="github-mark" aria-hidden="true">◉</div>
       <strong>Marcelo-maga</strong>
-      <span class="bento-muted">código, experimentos e rastros</span>
+      <span class="bento-muted">código e experimentos</span>
       <img
         class="github-contributions"
         src="https://ghchart.rshah.org/ff4400/Marcelo-maga"
@@ -60,11 +60,11 @@
     </a>
 
     <a class="bento-tile bento-about" href="{{url_for(path='about.html')}}">
-      <p class="bento-label">SOBRE</p>
+      <p class="bento-label">QUEM ESCREVE</p>
       <div>
-        <strong>Eu, fora do código.</strong>
+        <strong>Um pouco de contexto.</strong>
         <p>
-          Trabalho, setup, carreira e as coisas que acabam aparecendo por aqui.
+          Trabalho, setup e o que mais acaba aparecendo por aqui.
         </p>
       </div>
       <span class="bento-arrow" aria-hidden="true">-&gt;</span>
@@ -73,8 +73,8 @@
   {% if posts | length > 0 %}
   <section class="home-latest h-feed">
     <div class="home-section-header">
-      <p class="archive-kicker">Últimos arquivos</p>
-      <a href="{{url_for(path='archive.html')}}">Arquivo completo</a>
+      <p class="archive-kicker">Do arquivo</p>
+      <a href="{{url_for(path='archive.html')}}">Ver tudo</a>
     </div>
 
     <div class="home-latest-list">

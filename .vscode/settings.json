@@ -1,0 +1,18 @@
+{
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.defaultFormatter": null
+  },
+  "[css]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.defaultFormatter": null
+  },
+  "[jinja-html]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.defaultFormatter": null
+  },
+  "files.insertFinalNewline": false
+}
