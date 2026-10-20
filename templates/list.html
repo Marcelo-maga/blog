@@ -88,46 +88,18 @@ to="") | replace(from=".html", to="") %} {% endif %} {% if is_archive_index %}
   </section>
 </section>
 {% else %} {% if current_page == "index.html" %}
-{% set posts = site_data.posts | remove_draft | sort(attribute="date") | reverse %}
-<header class="home-bento">
-  <section class="bento-tile bento-intro">
-    <p class="bento-label">MARCELO.TXT / NOTAS DE SOFTWARE</p>
-    <h1>pensando em voz alta<br />sobre software e sistemas.</h1>
-    <p class="bento-note">Textos e anotações de quem trabalha com código.</p>
-  </section>
-
-  <section class="bento-tile bento-stats" aria-label="Estatísticas do blog">
-    <p class="bento-label">ARQUIVO</p>
-    <div class="bento-stat-main">
-      <strong>{{ posts | length }}</strong>
-      <span>notas<br />publicadas</span>
-    </div>
-    <div class="bento-stat-foot">
-      <span>arquivo em movimento</span>
-      <strong>online</strong>
-    </div>
-  </section>
-
-  <a class="bento-tile bento-github" href="https://github.com/Marcelo-maga" target="_blank" rel="noreferrer">
-    <div class="bento-tile-topline">
-      <span class="bento-label">GITHUB</span>
-      <span class="bento-arrow" aria-hidden="true">-&gt;</span>
-    </div>
-    <div class="github-mark" aria-hidden="true">◉</div>
-    <strong>Marcelo-maga</strong>
-    <span class="bento-muted">código e experimentos</span>
-    <img class="github-contributions" src="https://ghchart.rshah.org/ff4400/Marcelo-maga" alt="Atividade recente no GitHub" loading="lazy" />
-  </a>
-
-  <a class="bento-tile bento-about" href="{{url_for(path='about.html')}}">
-    <p class="bento-label">QUEM ESCREVE</p>
-    <div>
-      <strong>Um pouco de contexto.</strong>
-      <p>Trabalho, setup e o que mais acaba aparecendo por aqui.</p>
-    </div>
-    <span class="bento-arrow" aria-hidden="true">-&gt;</span>
-  </a>
+<header class="home-intro">
+  <h1>marcelo.txt</h1>
+  <p>{{ site.tagline }}</p>
 </header>
+<section class="github-stats" aria-label="Estatísticas do GitHub">
+  <a href="https://github.com/Marcelo-maga/Marcelo-maga" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats.vercel.app/api?username=Marcelo-maga&show_icons=true&hide_border=true&theme=transparent&title_color=ff4400&text_color=625b54&icon_color=ff4400&bg_color=00000000" alt="Estatísticas de Marcelo-maga no GitHub" loading="lazy" />
+  </a>
+  <a href="https://github.com/Marcelo-maga/Marcelo-maga" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Marcelo-maga&layout=compact&hide_border=true&theme=transparent&title_color=ff4400&text_color=625b54&icon_color=ff4400&bg_color=00000000" alt="Linguagens mais usadas por Marcelo-maga" loading="lazy" />
+  </a>
+</section>
 {% endif %}
 <section class="generic-list-shell h-feed">
   {% if title and current_page != "index.html" and author is not defined %} {%
