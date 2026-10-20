@@ -568,6 +568,7 @@ canvas {
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--line);
+  text-align: center;
 }
 
 .home-intro h1 {
@@ -577,18 +578,14 @@ canvas {
   line-height: 1.08;
 }
 
-.home-intro p {
-  margin: 0;
-  color: var(--text-dim);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 .github-stats {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  width: min(100%, 680px);
   margin-bottom: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .github-stats a {
@@ -1498,6 +1495,10 @@ canvas {
 
   .home-shell {
     gap: 2.5rem;
+  }
+
+  .github-stats {
+    grid-template-columns: 1fr;
   }
 
   .home-lanes {
