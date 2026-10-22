@@ -27,7 +27,7 @@ jobs:
 
       - name: Build site
         env:
-          MARMITE_URL: https://marcelo-maga.github.io/blog
+          MARMITE_URL: https://blog.marcelomaga.space
         run: sh ./build.sh site
 
       - name: Setup Pages
