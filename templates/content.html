@@ -82,7 +82,6 @@
     <div class="backlink-list">
       {% for item in content.back_links | slice(end=10) %}
       <a href="{{url_for(path=item.slug ~ '.html')}}">
-        <span>VEM_DE</span>
         {{ item.title }}
       </a>
       {% endfor %}

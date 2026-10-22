@@ -88,10 +88,17 @@ to="") | replace(from=".html", to="") %} {% endif %} {% if is_archive_index %}
   </section>
 </section>
 {% else %} {% if current_page == "index.html" %}
-<header class="hero-block home-hero">
-  {{ hero }}
-  <div class="section-rule"></div>
+<header class="home-intro">
+  <h1>marcelo.txt</h1>
 </header>
+<section class="github-stats" aria-label="Estatísticas do GitHub">
+  <a href="https://github.com/Marcelo-maga/Marcelo-maga" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats.vercel.app/api?username=Marcelo-maga&show_icons=true&hide_border=true&theme=transparent&title_color=ff4400&text_color=625b54&icon_color=ff4400&bg_color=00000000" alt="Estatísticas de Marcelo-maga no GitHub" loading="lazy" />
+  </a>
+  <a href="https://github.com/Marcelo-maga/Marcelo-maga" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Marcelo-maga&layout=compact&hide_border=true&theme=transparent&title_color=ff4400&text_color=625b54&icon_color=ff4400&bg_color=00000000" alt="Linguagens mais usadas por Marcelo-maga" loading="lazy" />
+  </a>
+</section>
 {% endif %}
 <section class="generic-list-shell h-feed">
   {% if title and current_page != "index.html" and author is not defined %} {%

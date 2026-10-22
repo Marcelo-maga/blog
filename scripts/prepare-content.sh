@@ -23,7 +23,7 @@ function basename(path, parts, count) {
 }
 ' > "$INDEX"
 
-find "$VAULT_ROOT" -type f -name '*.md' -print | while IFS= read -r note; do
+find "$CONTENT_ROOT" -type f -name '*.md' -print | while IFS= read -r note; do
   temporary="$WORK_DIR/note"
   if ! awk -v note="$note" -v vault="$VAULT_ROOT" -v media="midia" -v index_file="$INDEX" '
     function basename(path, parts, count) {

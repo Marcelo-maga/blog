@@ -564,18 +564,41 @@ canvas {
   align-items: stretch;
 }
 
-.home-hero {
-  margin-bottom: 3.5rem;
+.home-intro {
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.home-hero .hero-lead {
-  margin-left: auto;
-  margin-right: auto;
+.home-intro h1 {
+  margin: 0 0 0.8rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.45rem, 5vw, 3rem);
+  line-height: 1.08;
 }
 
-.home-hero .home-actions {
-  justify-content: center;
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: min(100%, 680px);
+  margin-bottom: 3.5rem;
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid var(--line);
+}
+
+.github-stats a {
+  display: block;
+  min-width: 0;
+  border: 1px solid var(--line-soft);
+  background: var(--surface);
+}
+
+.github-stats img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .home-actions {
@@ -1472,6 +1495,10 @@ canvas {
 
   .home-shell {
     gap: 2.5rem;
+  }
+
+  .github-stats {
+    grid-template-columns: 1fr;
   }
 
   .home-lanes {
