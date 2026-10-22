@@ -53,7 +53,7 @@ Outra diferença foi o peso, nossa como 5g possam fazer tanta diferença? mas ac
 
 ## Sensor
 
-Como não sou um completo maluco, n consigo sentir muita diferença, o Rappo já entregava um ótimo tracking pra mim, então não notei absolutamente nada ate que liguei os ...
+Como não sou um completo maluco, não consigo sentir muita diferença, o Rappo já entregava um ótimo tracking pra mim, então não notei absolutamente nada ate que liguei os ...
 
 ### 8k de polling hate
 
