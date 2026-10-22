@@ -11,7 +11,7 @@
 .meta-date,
 .article-meta-left {
   color: var(--text-dim);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.82rem;
 }
 
@@ -61,7 +61,7 @@
   align-items: center;
   gap: 0.45rem;
   color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.92rem;
   letter-spacing: 0.03em;
 }
@@ -90,7 +90,7 @@
 
 .pagination-current {
   color: var(--text-dim);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.84rem;
 }
 
@@ -252,7 +252,7 @@
   padding: 0.7rem;
   border-top: 1px solid var(--line);
   color: var(--text-dim);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.72rem;
   text-align: center;
 }
@@ -366,7 +366,7 @@
 .article-toc-label {
   margin: 0 0 0.9rem;
   color: var(--meta);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -383,7 +383,7 @@
   max-width: 100%;
   min-width: 0;
   color: var(--meta);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.76rem;
   line-height: 1.35;
   overflow-wrap: anywhere;
@@ -418,12 +418,12 @@
   border-bottom: 1px solid var(--line);
   background: var(--surface);
   color: var(--text-dim);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.74rem;
 }
 
 .article-content code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
 }
 
 .article-content :not(pre)>code {
@@ -446,7 +446,7 @@
 
 .alert-box h4 {
   margin: 0 0 0.35rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-display);
   font-size: 1.2rem;
 }
 
@@ -485,7 +485,7 @@
   gap: 0.9rem;
   flex-wrap: wrap;
   color: var(--text-dim);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.78rem;
 }
 
@@ -519,7 +519,7 @@
   background: transparent;
   color: var(--text);
   padding: 0.55rem 0.8rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-display);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -562,7 +562,7 @@
   background: var(--surface);
   color: var(--text);
   padding: 0.45rem 0.6rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.75rem;
   pointer-events: none;
   white-space: nowrap;
@@ -583,7 +583,7 @@
 .comments-section h2 {
   margin: 0 0 1.25rem;
   color: var(--text);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-display);
   font-size: 1.05rem;
   letter-spacing: 0.02em;
 }
@@ -619,7 +619,7 @@
 .tag-list a {
   border: 1px solid var(--line);
   padding: 0.35rem 0.7rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--accent);
 }
@@ -651,7 +651,7 @@
 
 .backlink-list a span {
   color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.62rem;
   letter-spacing: 0.14em;
 }

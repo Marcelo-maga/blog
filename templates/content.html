@@ -28,7 +28,7 @@
 <div class="article-frame">
 <article class="article-shell h-entry">
   <data class="p-name" value="{{ content.title }}"></data>
-  <a class="u-url" href="{{url_for(path=content.slug ~ '.html')}}" style="display:none;"></a>
+  <a class="u-url visually-hidden" href="{{url_for(path=content.slug ~ '.html')}}"></a>
   {% if content.authors %}
   {% set author_key = content.authors.0 %}
   {% else %}
@@ -62,7 +62,7 @@
   </header>
   {% endif %}
 
-  <div class="content-html article-content e-content">{{ content.html }}</div>
+  <div class="article-content e-content">{{ content.html }}</div>
 
   {% if content.tags %}
   <section class="article-tags-section">

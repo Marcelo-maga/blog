@@ -7,8 +7,8 @@ slug = "grafo"
 <section class="graph-view" data-graph-view>
   <div class="graph-toolbar">
     <div class="graph-legend" aria-label="Legenda do grafo">
-      <span><i class="graph-dot graph-dot-post"></i>Posts</span>
-      <span><i class="graph-dot graph-dot-tag"></i>Tags</span>
+      <span><span class="graph-dot graph-dot-post" aria-hidden="true"></span>Posts</span>
+      <span><span class="graph-dot graph-dot-tag" aria-hidden="true"></span>Tags</span>
     </div>
     <div class="graph-actions">
       <button class="graph-button" type="button" data-graph-reset>Centralizar</button>

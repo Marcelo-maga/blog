@@ -76,12 +76,11 @@
         </section>
     </div>
     {% endif %}
-    {% if footer is defined %}
     <footer class="site-footer">
+    {% if footer is defined %}
         {{ footer }}
     </footer>
     {% else %}
-    <footer class="site-footer">
         {{ site.footer | safe }}
     </footer>
     {% endif %}

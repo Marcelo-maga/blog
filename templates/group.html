@@ -53,7 +53,7 @@ archive_groups = group(kind=kind) %}
   <article><strong> {{ title }} </strong></article>
 </div>
 <article class="group-details h-feed">
-  <h1 class="p-name" style="display: none">{{ title }}</h1>
+  <h1 class="p-name visually-hidden">{{ title }}</h1>
   {% for name, items in group(kind=kind) -%}
   <details {% if loop.first %}open{% endif %}>
     <summary role="button" class="outline contrast {{kind}}-group-title">

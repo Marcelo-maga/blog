@@ -110,7 +110,8 @@ export const initSearch = () => {
         index = await response.json();
         loaded = true;
         render();
-      } catch {
+      } catch (error) {
+        console.error("Não foi possível carregar o índice de busca.", error);
         statusEl.textContent = "Busca indisponivel neste build.";
       }
     };

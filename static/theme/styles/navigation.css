@@ -21,7 +21,7 @@
 .article-meta-left,
 .article-author-mini,
 .footer-grid {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-display);
 }
 
 .brand {
@@ -126,8 +126,8 @@
   width: 16px;
   height: 16px;
   background-color: currentColor;
-  -webkit-mask: url("search.svg") center / contain no-repeat;
-  mask: url("search.svg") center / contain no-repeat;
+  -webkit-mask: url("../assets/search.svg") center / contain no-repeat;
+  mask: url("../assets/search.svg") center / contain no-repeat;
 }
 
 .search-open {
@@ -176,7 +176,7 @@
   outline: 0;
   background: transparent;
   color: var(--text);
-  font: 500 1rem/1.4 "Inter", sans-serif;
+  font: 500 1rem/1.4 var(--font-body);
 }
 
 .search-command input::placeholder {
@@ -188,7 +188,7 @@
   background: transparent;
   color: var(--meta);
   padding: 0.35rem 0.5rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.68rem;
   cursor: pointer;
 }
@@ -196,7 +196,7 @@
 .search-status {
   padding: 0.7rem 1rem;
   color: var(--meta);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.76rem;
   border-bottom: 1px solid var(--line-soft);
 }
@@ -225,7 +225,7 @@
 .search-result-type,
 .search-result-tags {
   color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: var(--font-mono);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
 }
@@ -237,7 +237,7 @@
 }
 
 .search-result strong {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-display);
   font-size: 1rem;
 }
 
@@ -251,4 +251,3 @@
   grid-column: 2;
   color: var(--text-dim);
 }
-

@@ -106,7 +106,6 @@ to="") | replace(from=".html", to="") %} {% endif %} {% if is_archive_index %}
   current_page is starting_with("posts-") %} {% set display_title = "Posts" %}
   {% endif %}
   <header class="generic-list-header">
-    <p class="archive-kicker">VISÃO</p>
     <h1>{{ display_title }}</h1>
   </header>
   {% endif %} {% if author is defined %}
