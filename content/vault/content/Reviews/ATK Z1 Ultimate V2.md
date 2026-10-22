@@ -24,13 +24,6 @@ Acho que essa foi a primeira grande diferença, o capricho com que a ATK fez com
 
 ![[20261022_115917.jpg]]
 
-## Shape
-Eu tenho um certo fetiche por mouses com a pegada do EC2 da Zowie, o Rappo já tinha essa mesma ideia e não queria mudar, nesse período que fiquei sem meu mouse principal voltei a usar o meu G403, e puta que me pariu, que mouse pesado e pra piorar o sensor estava meio estranho, nesse rolo peguei emprestado um DeathAdder Essential com meu mano Pratinho pra tapar o galho e poder continuar jogando... 
-
-![[Screenshot_20261016_202418_Chrome.jpg]]
-
-Enquanto isso meu mouse passava por uma sub-trama sinistra na China pra chegar ao Brasil, o medo tomou conta de mim, o Correios entrou em greve e já tinha certeza que nunca mais ia ver meu querido Z1, porem ele chegou, tudo certo ainda bem!
-
 ### Acessórios
 
 Aqui não achei nada demais, e acho que n tem muito pra onde correr, veio um jogo de feets extra, um cabo paracord muito mas muito bom mesmo, já tinha usado alguns mas esse é verdadeiramente leve e maleável chega a ser bizarro comparado com o do Rappo e griptapes na cor do mouse (que eu não uso)
@@ -38,6 +31,13 @@ Aqui não achei nada demais, e acho que n tem muito pra onde correr, veio um jog
 ![[20261022_115927.jpg]]
 
 ![[20261022_115959.jpg]]
+
+## Shape
+Eu tenho um certo fetiche por mouses com a pegada do EC2 da Zowie, o Rappo já tinha essa mesma ideia e não queria mudar, nesse período que fiquei sem meu mouse principal voltei a usar o meu G403, e puta que me pariu, que mouse pesado e pra piorar o sensor estava meio estranho, nesse rolo peguei emprestado um DeathAdder Essential com meu mano Pratinho pra tapar o galho e poder continuar jogando... 
+
+![[Screenshot_20261016_202418_Chrome.jpg]]
+
+Enquanto isso meu mouse passava por uma sub-trama sinistra na China pra chegar ao Brasil, o medo tomou conta de mim, o Correios entrou em greve e já tinha certeza que nunca mais ia ver meu querido Z1, porem ele chegou, tudo certo ainda bem!
 
 # Agora o principal
 
