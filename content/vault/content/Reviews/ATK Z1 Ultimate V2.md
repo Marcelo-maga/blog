@@ -55,7 +55,7 @@ Outra diferença foi o peso, nossa como 5g possam fazer tanta diferença? mas ac
 
 Como não sou um completo maluco, não consigo sentir muita diferença, o Rappo já entregava um ótimo tracking pra mim, então não notei absolutamente nada ate que liguei os ...
 
-### 8k de polling hate
+### 8k de polling rate
 
 Bizarro, no CS2 parece que o mouse flutua na mesa, não é algo que de uma vantagem extraordinária (ainda mais nos 19k do premier) mas a sensação de fluidez foi algo completamente novo, pena que a bateria simplesmente some depois de 2 partidas
 
