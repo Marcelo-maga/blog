@@ -1,0 +1,233 @@
+@media (max-width: 1180px) {
+  .article-toc {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --max: 100%;
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  .top-nav,
+  .page-column,
+  .article-shell,
+  .archive-shell,
+  .generic-list-shell,
+  .site-footer {
+    width: min(100% - 1.25rem, 42rem);
+  }
+
+  .top-nav {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.8rem 1rem;
+    min-height: 0;
+    padding: 0.60rem 0;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .top-nav-links {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 0.45rem;
+    overflow: visible;
+    white-space: normal;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-0.35rem);
+    transition: max-height 180ms ease, opacity 160ms ease, transform 160ms ease, visibility 0s linear 180ms;
+  }
+
+  .top-nav.menu-open .top-nav-links {
+    max-height: 12rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+
+  .top-nav-icons {
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: flex-end;
+    gap: 0.85rem;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    width: 100%;
+    min-height: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.35rem;
+    border: 1px solid var(--line-soft);
+    background: rgba(73, 61, 48, 0.03);
+    font-size: 0.72rem;
+    text-align: center;
+  }
+
+  .nav-link-active {
+    border-color: rgba(255, 68, 0, 0.65);
+    background: rgba(255, 68, 0, 0.1);
+    padding-bottom: 0.25rem;
+  }
+
+  .icon-button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid var(--line-soft);
+    background: rgba(73, 61, 48, 0.03);
+  }
+
+  .icon-search {
+    width: 15px;
+    height: 15px;
+  }
+
+  .page-shell {
+    padding: 2rem 0 3.5rem;
+  }
+
+  .hero-block {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-shell h1,
+  .archive-header h1,
+  .generic-list-header h1 {
+    font-size: clamp(2.25rem, 12vw, 3rem);
+  }
+
+  .article-title {
+    font-size: clamp(2rem, 10vw, 2.65rem);
+  }
+
+  .home-shell {
+    gap: 2.5rem;
+  }
+
+  .github-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .home-lanes {
+    grid-template-columns: 1fr;
+  }
+
+  .home-lane {
+    min-height: 0;
+  }
+
+  .home-section-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-graph-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .post-constellation {
+    height: 260px;
+  }
+
+  .archive-shell {
+    gap: 2.75rem;
+  }
+
+  .archive-header {
+    padding-bottom: 2rem;
+  }
+
+  .archive-year-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .archive-entry {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .feed-card,
+  .author-panel {
+    padding: 1.1rem;
+  }
+
+  .article-frame {
+    display: block;
+    width: min(100% - 1.25rem, 42rem);
+  }
+
+  .article-frame .article-shell {
+    max-width: 100%;
+  }
+
+  .feed-title {
+    font-size: clamp(1.45rem, 8vw, 1.85rem);
+  }
+
+  .feed-summary,
+  .article-content {
+    font-size: 0.96rem;
+  }
+
+  .article-meta-left {
+    flex-wrap: wrap;
+    gap: 0.45rem 1rem;
+  }
+
+  .article-author-mini img,
+  .author-panel img {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .backlink-list a {
+    padding: 0.85rem;
+  }
+
+  .pagination {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .pagination-current {
+    order: -1;
+    text-align: center;
+  }
+
+  .pagination-slot,
+  .pagination-slot-next {
+    justify-content: center;
+  }
+
+  .article-meta-bar,
+  .author-panel,
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.9rem;
+  }

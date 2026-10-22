@@ -1,0 +1,45 @@
+.site-footer {
+  margin-top: auto;
+  padding: 5rem 0 3rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.footer-grid {
+  width: 100%;
+  justify-content: space-between;
+  gap: 1.5rem;
+  color: var(--meta);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.footer-grid a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.footer-grid a:hover {
+  color: var(--accent-hover);
+}
+
+.footer-counter {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.footer-counter img {
+  display: block;
+  width: auto;
+  height: 20px;
+  opacity: 0.82;
+  transition: opacity 160ms ease;
+}
+
+.footer-counter:hover img {
+  opacity: 1;
+}
+

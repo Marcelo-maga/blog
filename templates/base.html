@@ -86,7 +86,7 @@
     </footer>
     {% endif %}
     {% block tail %}
-    <script src="{{url_for(path='static/theme.js')}}"></script>
+    <script type="module" src="{{url_for(path='static/theme.js')}}"></script>
     {% endblock %}
     {% if htmltail is defined %}
     {{ htmltail }}
