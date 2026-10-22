@@ -221,6 +221,10 @@ canvas {
   overflow: hidden;
 }
 
+.image-modal-open {
+  overflow: hidden;
+}
+
 .search-overlay {
   position: fixed;
   inset: 0;
@@ -940,6 +944,12 @@ canvas {
   display: block;
   height: auto;
   margin-inline: auto;
+  cursor: zoom-in;
+}
+
+.article-content img:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 0.25rem;
 }
 
 .article-content figure {
@@ -957,6 +967,85 @@ canvas {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.72rem;
   text-align: center;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.image-modal[hidden] {
+  display: none;
+}
+
+.image-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 33, 29, 0.82);
+  backdrop-filter: blur(8px);
+}
+
+.image-modal-dialog {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: min(92vw, 1200px);
+  max-height: 92vh;
+  margin: 0;
+}
+
+.image-modal-image {
+  display: block;
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  border: 1px solid rgba(255, 253, 248, 0.35);
+  object-fit: contain;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(255, 253, 248, 0.45);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-modal-close:hover,
+.image-modal-close:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.image-modal-caption {
+  position: absolute;
+  right: 0;
+  bottom: -2rem;
+  left: 0;
+  overflow: hidden;
+  color: #fffdf8;
+  font-size: 0.78rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .article-content pre {
