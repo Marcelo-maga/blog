@@ -1,27 +1,27 @@
 .site-footer {
   margin-top: auto;
   padding: 5rem 0 3rem;
-  border-top: 1px solid var(--line-soft);
+  border-top: 1px solid var(--color-line-soft);
 }
 
 .footer-grid {
   width: 100%;
   justify-content: space-between;
   gap: 1.5rem;
-  color: var(--meta);
+  color: var(--color-meta);
   font-size: 0.72rem;
   letter-spacing: 0.04em;
   text-align: left;
 }
 
 .footer-grid a {
-  color: var(--accent);
+  color: var(--color-accent);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
 
 .footer-grid a:hover {
-  color: var(--accent-hover);
+  color: var(--color-accent-hover);
 }
 
 .footer-counter {
