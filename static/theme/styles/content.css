@@ -1,3 +1,9 @@
+.feed-meta-row,
+.chip-row,
+.article-meta-bar,
+.article-meta-left,
+.article-author-mini,
+.footer-grid {
   display: flex;
   align-items: center;
 }
