@@ -15,9 +15,13 @@
     {% endif %}
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{site.name}}">
+    <meta property="og:image" content="{{url_for(path='static/social-preview.jpg', abs=true)}}">
+    <meta property="og:image:width" content="1424">
+    <meta property="og:image:height" content="752">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ site.name }}">
     <meta name="twitter:description" content="{{ site.tagline }}">
+    <meta name="twitter:image" content="{{url_for(path='static/social-preview.jpg', abs=true)}}">
     {% endblock %}
     {% block head %}
     <title>{% if title %}{{title}} | {% endif %}{{ site.name }}</title>
