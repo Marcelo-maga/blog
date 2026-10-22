@@ -11,10 +11,14 @@
             "id": "80745dd71c2c8e43",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/Reviews/ATK Z1 Ultimate V2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "ATK Z1 Ultimate V2"
             }
           }
         ]
@@ -181,10 +185,16 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "80745dd71c2c8e43",
+  "active": "e09450e3db454976",
   "lastOpenFiles": [
+    "content/Reviews",
+    "midia/20261022_115959.jpg",
+    "midia/20261022_115927.jpg",
+    "midia/20261022_115917.jpg",
+    "midia/20261022_115855.jpg",
+    "midia/20261022_115839.jpg",
     "content/Blog novo (quase isso).md",
-    "content/ATK Z1 Ultimate V2.md",
+    "content/Reviews/ATK Z1 Ultimate V2.md",
     "content/about.md",
     "file:C:/Users/marce/Documents/repos/blog/content/about.md",
     "midia/20261017_150124 1.jpg",
