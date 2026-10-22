@@ -59,7 +59,7 @@ Como não sou um completo maluco, não consigo sentir muita diferença, o Rappo 
 
 Bizarro, no CS2 parece que o mouse flutua na mesa, não é algo que de uma vantagem extraordinária (ainda mais nos 19k do premier) mas a sensação de fluidez foi algo completamente novo, pena que a bateria simplesmente some depois de 2 partidas
 
-## Switchs
+## Switches
 
 Senti uma leve diferença, parecem mais duros, como se fossem de teclados, sentia muito desconforto ao apertar e segurar o mouse1 no VT3, parecia sambar na carcaça dele, com o Z1 isso não acontece
 
